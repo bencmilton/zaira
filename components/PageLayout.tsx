@@ -2,6 +2,7 @@ import { FC } from 'react';
 import Head from 'next/head';
 
 import Nav from './Nav';
+import Footer from './Footer';
 
 type Props = {
     pageTitle: string;
@@ -16,6 +17,7 @@ const PageLayout: FC<Props> = props => (
         <Nav />
         <main className="main">
             <section>{props.children}</section>
+            <Footer />
         </main>
         <style global jsx>{`
             :global(html, body) {
