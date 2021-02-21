@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
 
+import Link from './Link';
 import { emailUrl, resumeUrl } from './links';
 import styles from './Nav.module.css';
 
@@ -31,39 +32,29 @@ const Nav: FC = () => {
         >
             <ul className={styles.navItems}>
                 <li>
-                    <a className={styles.link} href="/">
+                    <Link openNewWindow={false} className={styles.link} href="/">
                         Home
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a className={styles.link} href="/about">
+                    <Link openNewWindow={false} className={styles.link} href="/about">
                         About
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a className={styles.link} href="/projects">
+                    <Link openNewWindow={false} className={styles.link} href="/projects">
                         Projects
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a
-                        className={styles.link}
-                        href={resumeUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <Link className={styles.link} href={resumeUrl}>
                         Resume
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a
-                        className={styles.link}
-                        href={emailUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <Link className={styles.link} href={emailUrl}>
                         Contact
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </div>

@@ -37,17 +37,29 @@
     width: 100%;
 }
 
-.portrait {
+.aboutMe {
     grid-column: 1;
     grid-row: 2;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
     width: auto;
     height: auto;
     border-right: 3px solid black;
-    padding: 27px;
+    padding: 27px 60px;
+}
+
+.aboutMeHeader {
+    font-weight: normal;
+}
+
+.aboutMeBeliefs {
+    padding-top: 18px;
+    text-align: left;
+}
+
+.aboutMeLink {
+    color: black;
 }
 
 .work {

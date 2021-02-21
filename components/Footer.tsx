@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import Link from './Link';
 import { linkedInUrl, instagramUrl } from './links';
 import styles from './Footer.module.css';
 
@@ -11,34 +12,24 @@ const Footer: FC = () => (
         <div className={styles.footerSection}>
             <ul className={styles.socialLinks}>
                 <li>
-                    <a
-                        className={styles.socialLink}
-                        href={linkedInUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <Link className={styles.socialLink} href={linkedInUrl}>
                         <img
                             src="/linkedin_64px.png"
                             width={20}
                             height={20}
                             alt="Link to Zaira Vallejo's LinkedIn profile"
                         />
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a
-                        className={styles.socialLink}
-                        href={instagramUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
+                    <Link className={styles.socialLink} href={instagramUrl}>
                         <img
                             src="/instagram_64px.png"
                             width={20}
                             height={20}
                             alt="Link to Zaira Vallejo's Instagram"
                         />
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </div>

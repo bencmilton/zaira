@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import Link from './Link';
 import { emailUrl, resumeUrl } from './links';
 import styles from './Main.module.css';
 
@@ -21,24 +22,64 @@ const Main: FC = () => (
             </p>
         </header>
         <div className={styles.imageContainer}>
-            <img className={styles.image} src="/trees.jpg" alt="Picture of trees" />
+            <img className={styles.image} src="/trees.webp" alt="Picture of trees" />
         </div>
-        <div className={styles.portrait}>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-            <div>
-                <img src="/zaira_portrait.jpg" alt="Portrait of Zaira" width={266} height={400} />
+        <div className={styles.aboutMe}>
+            <h4 className={styles.aboutMeHeader}>
+                So, here’s me. And since you asked, Zaira rhymes with Tyra, as in Banks.
+            </h4>
+            <picture>
+                <source media="(max-width: 667px)" srcSet="/zaira_portrait-260w.webp" />
+                <source media="(min-width: 668px)" srcSet="/zaira_portrait-480w.webp" />
+                <img
+                    src="/zaira_portrait-260w.webp"
+                    alt="Portrait of Zaira"
+                    width={260}
+                    height={390}
+                />
+            </picture>
+            <div className={styles.aboutMeBeliefs}>
+                <div>A few things I believe in:</div>
+                <ul>
+                    <li>
+                        <Link
+                            className={styles.aboutMeLink}
+                            href="https://www.americaneedsyou.org/locations/nyny/ny-young-leadership-board/"
+                        >
+                            The power of mentorship
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            className={styles.aboutMeLink}
+                            href="https://www.nytimes.com/2014/06/15/travel/finding-mexico-city-and-luis-barragan-again.html"
+                        >
+                            Good design
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className={styles.aboutMeLink} href="https://www.nypl.org/">
+                            Continued learning
+                        </Link>
+                    </li>
+                    <li>
+                        <Link className={styles.aboutMeLink} href="https://youtu.be/KXg5JSKVlPU">
+                            NYC magic
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            className={styles.aboutMeLink}
+                            href="https://www.instagram.com/p/B4n8zYZFSh_/"
+                        >
+                            A cold martini (always gin)
+                        </Link>
+                    </li>
+                </ul>
             </div>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
-            </p>
         </div>
         <div className={styles.work}>
-            <p>Putting in Work</p>
+            <h4>Putting in Work</h4>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -74,19 +115,19 @@ const Main: FC = () => (
         </div>
         <div className={styles.divider}>"Lorem ipsum dolor sit amet" -- Puff</div>
         <div className={styles.substack}>
-            <a href="https://zaira.substack.com/welcome" target="_blank" rel="noopener noreferrer">
+            <Link underline={false} href="https://zaira.substack.com/welcome">
                 Substack
-            </a>
+            </Link>
         </div>
         <div className={styles.resume}>
-            <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
+            <Link underline={false} href={resumeUrl}>
                 Resume
-            </a>
+            </Link>
         </div>
         <div className={styles.contact}>
-            <a href={emailUrl} target="_blank" rel="noopener noreferrer">
+            <Link underline={false} href={emailUrl}>
                 Contact Zaira
-            </a>
+            </Link>
         </div>
     </article>
 );
