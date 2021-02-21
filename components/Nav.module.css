@@ -1,0 +1,29 @@
+.navHidden {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    color: black;
+    z-index: 3;
+    padding: 18px 9px;
+    margin-left: 9px;
+    font-weight: bold;
+}
+
+.navOpen {
+    position: fixed;
+    color: black;
+    z-index: 3;
+    padding: 18px 9px;
+    margin-left: 9px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.navItems {
+    list-style: none;
+    padding-left: 0;
+}
