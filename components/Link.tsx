@@ -9,6 +9,7 @@ type Props = {
     openNewWindow?: boolean;
     underline?: boolean;
 };
+
 const Link: FC<Props> = ({ href, className, openNewWindow = true, underline = true, children }) => (
     <a
         target={openNewWindow ? '_blank' : undefined}
