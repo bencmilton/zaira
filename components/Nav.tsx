@@ -1,5 +1,6 @@
 import { FC, useState } from 'react';
 
+import { emailUrl, resumeUrl } from './links';
 import styles from './Nav.module.css';
 
 const Nav: FC = () => {
@@ -45,14 +46,19 @@ const Nav: FC = () => {
                     </a>
                 </li>
                 <li>
-                    <a className={styles.link} href="/resume">
+                    <a
+                        className={styles.link}
+                        href={resumeUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         Resume
                     </a>
                 </li>
                 <li>
                     <a
                         className={styles.link}
-                        href="mailto:zaira@holazsv.com?subject=Hola Zaira!"
+                        href={emailUrl}
                         target="_blank"
                         rel="noopener noreferrer"
                     >

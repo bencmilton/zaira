@@ -1,5 +1,6 @@
 import { FC } from 'react';
 
+import { emailUrl, resumeUrl } from './links';
 import styles from './Main.module.css';
 
 const Main: FC = () => (
@@ -66,20 +67,12 @@ const Main: FC = () => (
             </a>
         </div>
         <div className={styles.resume}>
-            <a
-                href="https://drive.google.com/file/d/1KTP-mhFr8mewMeoYcrcE0gPhA_d1ktwK/view"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <a href={resumeUrl} target="_blank" rel="noopener noreferrer">
                 Resume
             </a>
         </div>
         <div className={styles.contact}>
-            <a
-                href="mailto:holazsv@gmail.com?subject=Hola Zaira!"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <a href={emailUrl} target="_blank" rel="noopener noreferrer">
                 Contact Zaira
             </a>
         </div>
