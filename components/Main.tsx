@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { FC } from 'react';
 
 import styles from './Main.module.css';
@@ -8,8 +7,8 @@ const Main: FC = () => (
         <header className={styles.header}>
             <h1>Zaira Stefani Vallejo</h1>
         </header>
-        <div className={styles.image}>
-            <Image src="/trees.jpg" alt="Picture of trees" layout="fill" />
+        <div className={styles.imageContainer}>
+            <img className={styles.image} src="/trees.jpg" alt="Picture of trees" />
         </div>
         <div className={styles.portrait}>
             <p>
@@ -18,7 +17,7 @@ const Main: FC = () => (
                 exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <div>
-                <Image src="/zaira_portrait.jpg" alt="Portrait of Zaira" width={266} height={400} />
+                <img src="/zaira_portrait.jpg" alt="Portrait of Zaira" width={266} height={400} />
             </div>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

@@ -1,5 +1,4 @@
 import { FC } from 'react';
-import Image from 'next/image';
 
 import styles from './Footer.module.css';
 
@@ -18,7 +17,7 @@ const Footer: FC = () => (
                         rel="noopener noreferrer"
                     >
                         <span className={styles.socialIcon}>
-                            <Image src="/linkedin_64px.png" width={20} height={20} />
+                            <img src="/linkedin_64px.png" width={20} height={20} />
                         </span>
                         LinkedIn
                     </a>
@@ -31,7 +30,7 @@ const Footer: FC = () => (
                         rel="noopener noreferrer"
                     >
                         <span className={styles.socialIcon}>
-                            <Image src="/instagram_64px.png" width={20} height={20} />
+                            <img src="/instagram_64px.png" width={20} height={20} />
                         </span>
                         Instagram
                     </a>
