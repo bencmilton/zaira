@@ -26,8 +26,8 @@
     padding: 0 132px;
     margin: 0;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     height: 100%;
 }
 
@@ -36,10 +36,7 @@
     align-items: center;
     justify-content: center;
     color: black;
-}
-
-.socialIcon {
-    margin-right: 9px;
+    margin-right: 10px;
 }
 
 @media only screen and (max-width: 668px) {

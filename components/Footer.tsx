@@ -16,10 +16,7 @@ const Footer: FC = () => (
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span className={styles.socialIcon}>
-                            <img src="/linkedin_64px.png" width={20} height={20} />
-                        </span>
-                        LinkedIn
+                        <img src="/linkedin_64px.png" width={20} height={20} />
                     </a>
                 </li>
                 <li>
@@ -29,10 +26,7 @@ const Footer: FC = () => (
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <span className={styles.socialIcon}>
-                            <img src="/instagram_64px.png" width={20} height={20} />
-                        </span>
-                        Instagram
+                        <img src="/instagram_64px.png" width={20} height={20} />
                     </a>
                 </li>
             </ul>
