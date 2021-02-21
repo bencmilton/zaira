@@ -17,7 +17,12 @@ const Footer: FC = () => (
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <img src="/linkedin_64px.png" width={20} height={20} />
+                        <img
+                            src="/linkedin_64px.png"
+                            width={20}
+                            height={20}
+                            alt="Link to Zaira Vallejo's LinkedIn profile"
+                        />
                     </a>
                 </li>
                 <li>
@@ -27,7 +32,12 @@ const Footer: FC = () => (
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        <img src="/instagram_64px.png" width={20} height={20} />
+                        <img
+                            src="/instagram_64px.png"
+                            width={20}
+                            height={20}
+                            alt="Link to Zaira Vallejo's Instagram"
+                        />
                     </a>
                 </li>
             </ul>

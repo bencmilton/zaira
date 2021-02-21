@@ -13,6 +13,10 @@ const PageLayout: FC<Props> = props => (
         <Head>
             <title>{props.pageTitle}</title>
             <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+            <meta
+                name="description"
+                content="Welcome to Zaira Stefani Vallejo's personal website!"
+            />
         </Head>
         <Nav />
         <main className="main">

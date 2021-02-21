@@ -6,7 +6,19 @@ import styles from './Main.module.css';
 const Main: FC = () => (
     <article className={styles.container}>
         <header className={styles.header}>
-            <h1>Zaira Stefani Vallejo</h1>
+            <p>
+                ¡Saludos! I’m <span className={styles.name}>Zaira Stefani Vallejo</span> - a
+                strategist and brand marketer interested in the intersection of culture and
+                commerce. Specifically, how global trends and the human need for self-actualization
+                shape the 5 W’s (and 1 H) of spending behavior and our relationship with companies,
+                small and large.
+            </p>
+            <p>
+                Fact: breaking old habits is hard. In order to be game-changing, you have to get out
+                of your comfort zone. I work with businesses to do just that - push them to color
+                outside of the lines to become enviable, often-copied brands. Why? Because strong
+                brand equity adds real bottomline value - and better brands have more fun!
+            </p>
         </header>
         <div className={styles.imageContainer}>
             <img className={styles.image} src="/trees.jpg" alt="Picture of trees" />

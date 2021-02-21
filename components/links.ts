@@ -1,4 +1,4 @@
-export const emailUrl = 'mailto:holazsv@gmail.com?subject=Hola Zaira!';
+export const emailUrl = 'mailto:holazsv@gmail.com?subject=¡Hola Zaira!';
 
 export const linkedInUrl = 'https://www.linkedin.com/in/z-s-v/';
 
