@@ -40,8 +40,8 @@ const Main: FC = () => (
             </picture>
             <div className={styles.aboutMeBeliefs}>
                 <div>A few things I believe in:</div>
-                <ul>
-                    <li>
+                <ul className={styles.aboutMeList}>
+                    <li className={styles.aboutMeListItem}>
                         <Link
                             className={styles.aboutMeLink}
                             href="https://www.americaneedsyou.org/locations/nyny/ny-young-leadership-board/"
@@ -49,7 +49,7 @@ const Main: FC = () => (
                             The power of mentorship
                         </Link>
                     </li>
-                    <li>
+                    <li className={styles.aboutMeListItem}>
                         <Link
                             className={styles.aboutMeLink}
                             href="https://www.nytimes.com/2014/06/15/travel/finding-mexico-city-and-luis-barragan-again.html"
@@ -57,17 +57,17 @@ const Main: FC = () => (
                             Good design
                         </Link>
                     </li>
-                    <li>
+                    <li className={styles.aboutMeListItem}>
                         <Link className={styles.aboutMeLink} href="https://www.nypl.org/">
                             Continued learning
                         </Link>
                     </li>
-                    <li>
+                    <li className={styles.aboutMeListItem}>
                         <Link className={styles.aboutMeLink} href="https://youtu.be/KXg5JSKVlPU">
                             NYC magic
                         </Link>
                     </li>
-                    <li>
+                    <li className={styles.aboutMeListItem}>
                         <Link
                             className={styles.aboutMeLink}
                             href="https://www.instagram.com/p/B4n8zYZFSh_/"
