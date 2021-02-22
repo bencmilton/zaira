@@ -1,15 +1,28 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 0 96px 27px 96px;
+    padding: 42px 96px 78px 96px;
     text-align: left;
+    color: white;
 }
 
-.title {
+.fontColorBlack {
+    color: black;
+}
+
+.header {
     padding-bottom: 9px;
 }
 
-.stuff {
+.title {
+    font-size: 20px;
+}
+
+.subtitle {
+    padding: 18px 0;
+}
+
+.body {
     width: 100%;
     height: auto;
     display: flex;
@@ -35,4 +48,25 @@
 
 .bold {
     font-weight: bold;
+    margin-right: 5px;
+}
+
+.yellow {
+    background: var(--zaira-yellow);
+}
+
+.green {
+    background: var(--zaira-green);
+}
+
+.blue {
+    background: var(--zaira-blue);
+}
+
+.red {
+    background: var(--zaira-red);
+}
+
+.black {
+    background: black;
 }
