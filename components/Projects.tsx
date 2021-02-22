@@ -35,14 +35,14 @@ const PROJECTS = [
         insight:
             'Consumers have adopted buying food online and DTC, and are keen to discover new products.',
         action:
-            'Using market research, consumer insights, and cultural trends, created a brand identity system and product strategy to bring this idea to fruition.',
+            'Using market research, consumer insights, and cultural trends, created brand guidelines, informed brand identity system, and product strategy to bring idea to fruition.',
         outcome: (
             <span>
                 Developed an elevated CPG brand targeted to a niche ethnic demographic. Along with a
                 product line of high-quality foods, took a holistic approach to create a brand that
                 consumers can learn and grow with.
                 <p>
-                    <i>In Progress</i>
+                    <i>Launching Soon</i>
                 </p>
             </span>
         ),
