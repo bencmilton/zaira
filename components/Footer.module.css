@@ -22,7 +22,7 @@
 }
 
 .socialLinks {
-    background: #f50301;
+    background: var(--zaira-red);
     list-style: none;
     padding: 0 132px;
     margin: 0;

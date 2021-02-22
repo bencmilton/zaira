@@ -28,6 +28,11 @@ const PageLayout: FC<Props> = props => (
                 margin: 0;
                 padding: 0;
                 height: 100%;
+                --zaira-tan: #e7d8b5;
+                --zaira-yellow: #feb837;
+                --zaira-red: #f50301;
+                --zaira-green: #0f963f;
+                --zaira-blue: #0424af;
             }
 
             :global(body) {

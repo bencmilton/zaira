@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: left;
+    padding: 0 96px;
+    background: var(--zaira-tan);
+    height: 100px;
+}
+
+.yellow {
+    background: var(--zaira-yellow);
+}
+
+.green {
+    background: var(--zaira-green);
+}

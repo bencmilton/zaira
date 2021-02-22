@@ -7,5 +7,5 @@
 }
 
 .link:hover {
-    color: #f50301;
+    color: var(--zaira-red);
 }
