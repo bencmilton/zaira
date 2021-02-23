@@ -17,8 +17,9 @@ const PROJECTS = [
         imageUrl: '/70-Pine_Living-Room-1280w.webp',
         recommendation: (
             <span>
-                Snowe can win by building community, adopting social commerce, and developing a
-                subscription model, owned and in partnership, that creates a recurring revenue
+                Snowe can win by building community, adopting social
+                commerce, and developing a subscription model, owned
+                and in partnership, that creates a recurring revenue
                 stream to grow brand equity and business bottomline.
                 <p>
                     <i>Case Study</i>
@@ -30,17 +31,17 @@ const PROJECTS = [
         title: 'LAUNCHING A GROCERY CPG',
         subtitle:
             'Bringing a brand to life from brand foundation to go to market strategy and future growth plan.',
-        color: 'yellow',
-        fontColor: 'black',
+        color: 'green',
         insight:
             'Consumers have adopted buying food online and DTC, and are keen to discover new products.',
         action:
             'Using market research, consumer insights, and cultural trends, created brand guidelines, informed brand identity system, and product strategy to bring idea to fruition.',
         outcome: (
             <span>
-                Developed an elevated CPG brand targeted to a niche ethnic demographic. Along with a
-                product line of high-quality foods, took a holistic approach to create a brand that
-                consumers can learn and grow with.
+                Developed an elevated CPG brand targeted to a niche
+                ethnic demographic. Along with a product line of
+                high-quality foods, took a holistic approach to create
+                a brand that consumers can learn and grow with.
                 <p>
                     <i>Launching Soon</i>
                 </p>
@@ -52,19 +53,25 @@ const PROJECTS = [
         title: 'INNOVATING BRICK & MORTAR',
         subtitle:
             'An immersive retail experience delivered within a luxury residential high-rise in Manhattan.',
-        color: 'green',
+        color: 'yellow',
+        fontColor: 'black',
         insight:
             'Partnering with real estate developers to stage units as shoppable showrooms, Snowe could reach consumers as close to home as possible, making it more accessible than ever to see and shop for their apartment.',
         action:
             'Designed, installed and launched an aspirational Snowe home. Negotiated key brand partnerships whose involvement increased social visibility. ',
         outcome: (
             <span>
-                Launched to industry insiders, held exclusive shopping appointments, and generated
-                interest from real estate developers to replicate the idea in other markets.{' '}
+                Launched to industry insiders, held exclusive shopping
+                appointments, and generated interest from real estate
+                developers to replicate the idea in other markets.{' '}
                 <Link href="https://businessofhome.com/articles/snowe-and-industry-west-want-to-meet-clients-where-they-are-at-home">
                     Press
                 </Link>{' '}
-                & <Link href="https://www.snowepenthousewest.com/">Microsite</Link>.
+                &{' '}
+                <Link href="https://www.snowepenthousewest.com/">
+                    Microsite
+                </Link>
+                .
                 <p>
                     <i>Executed</i>
                 </p>
@@ -76,13 +83,18 @@ const PROJECTS = [
         title: 'TARGETING B2B2C',
         subtitle:
             'Reimagined Snowe’s Trade program to be a competitive and compelling offering for design professionals.',
-        color: 'black',
-        insight: 'Design professionals were an untapped',
+        color: 'red',
+        fontColor: 'black',
+        insight:
+            'Design professionals were an untapped customer segment who could deliver massive value through higher AOV, network effects, and design-adjacent associations.',
         action:
-            'Create an aspirational Snowe home, from design to installation, while negotiating key brand partnerships to increase outreach and visibility.',
+            'Led customer interviews and leveraged historical data along with competitive market research to create a program with compelling incentives and a high-touch customer experience.',
         outcome: (
             <span>
-                Saw a 140% increase in YoY traffic and 2x average time on site.
+                Saw a 140% increase in YoY traffic and 2x average time
+                on site. Participated in the Architectural Digest
+                Design Show. Saw a steep increase in new account
+                creation.
                 <p>
                     <i>Executed</i>
                 </p>
@@ -93,16 +105,18 @@ const PROJECTS = [
     {
         title: 'BUILDING AN OMNICHANNEL STRATEGY',
         subtitle:
-            'Developed the marketing strategy for a luxury wedding vendor, with a focus on digital.',
-        color: 'red',
-        fontColor: 'black',
+            'Developed the marketing strategy for a B2B luxury wedding vendor, with a focus on digital.',
+        color: 'black',
         insight:
-            'By partnering with real estate developers to a stage units as a shoppable showroom, Snowe could reach consumers as close to home as possible, making it more accessible than ever to see and shop for their apartment.',
+            'Nüage Designs could become a robust resource for B2B professionals, providing high quality content and leveraging partnerships to increase visibility and establish thought leadership to organically grow the business.',
         action:
-            'Create an aspirational Snowe home, from design to installation, while negotiating key brand partnerships to increase outreach and visibility.',
+            'Developed content strategy and calendar, sole copywriter for blog, email, and social, negotiated best-in-class partnerships, developed proprietary design tools, expanded brand architecture.',
         outcome: (
             <span>
-                525% growth in Instagram followers over 3 years
+                Saw customer growth, increased customer LTV, 5x growth
+                in Instagram followers, secured partnerships with key
+                media partners (The Knot), and created a consistent
+                marketing strategy.
                 <p>
                     <i>Executed</i>
                 </p>
