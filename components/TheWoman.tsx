@@ -1,9 +1,9 @@
 import { FC } from 'react';
 
 import Link from './Link';
-import styles from './AboutMe.module.css';
+import styles from './styles/TheWoman.module.css';
 
-const AboutMe: FC = () => (
+const TheWoman: FC = () => (
     <div className={styles.container}>
         <div className={styles.innerContainer}>
             <div className={styles.header}>THE WOMAN</div>
@@ -76,4 +76,4 @@ const AboutMe: FC = () => (
     </div>
 );
 
-export default AboutMe;
+export default TheWoman;

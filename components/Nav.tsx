@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import Link from './Link';
 import { emailUrl, resumeUrl } from './links';
-import styles from './Nav.module.css';
+import styles from './styles/Nav.module.css';
 
 const Nav: FC = () => {
     const [isOpen, setIsOpen] = useState(false);

@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 import Project from './Project';
 import Link from './Link';
-import styles from './Projects.module.css';
+import styles from './styles/Projects.module.css';
 
 const PROJECTS = [
     {

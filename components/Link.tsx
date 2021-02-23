@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import classNames from 'classnames';
 
-import styles from './Link.module.css';
+import styles from './styles/Link.module.css';
 
 type Props = {
     href: string;
@@ -10,7 +10,13 @@ type Props = {
     underline?: boolean;
 };
 
-const Link: FC<Props> = ({ href, className, openNewWindow = true, underline = true, children }) => (
+const Link: FC<Props> = ({
+    href,
+    className,
+    openNewWindow = true,
+    underline = true,
+    children,
+}) => (
     <a
         target={openNewWindow ? '_blank' : undefined}
         rel={openNewWindow ? 'noopener noreferrer' : undefined}

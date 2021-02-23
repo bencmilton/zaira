@@ -1,10 +1,10 @@
 import { FC } from 'react';
 
 import Link from './Link';
-import AboutMe from './AboutMe';
-import Work from './Work';
+import TheWoman from './TheWoman';
+import TheWork from './TheWork';
 import { emailUrl, resumeUrl } from './links';
-import styles from './Main.module.css';
+import styles from './styles/Main.module.css';
 
 const Main: FC = () => (
     <article className={styles.container}>
@@ -38,8 +38,8 @@ const Main: FC = () => (
                 alt="Matisse cutout collage"
             />
         </div>
-        <AboutMe />
-        <Work />
+        <TheWoman />
+        <TheWork />
         <div className={styles.divider}>
             "Lorem ipsum dolor sit amet" -- Puff
         </div>

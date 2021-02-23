@@ -1,9 +1,9 @@
 import { FC } from 'react';
 
 import Link from './Link';
-import styles from './Work.module.css';
+import styles from './styles/TheWork.module.css';
 
-const Work: FC = () => (
+const TheWork: FC = () => (
     <div className={styles.container}>
         <div className={styles.header}>THE WORK</div>
         <div className={styles.section}>
@@ -63,4 +63,4 @@ const Work: FC = () => (
     </div>
 );
 
-export default Work;
+export default TheWork;

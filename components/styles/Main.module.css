@@ -37,12 +37,6 @@
     width: 100%;
 }
 
-@media only screen and (max-width: 668px) {
-    .header {
-        padding: 0 44px;
-    }
-}
-
 .divider {
     grid-column: 1 / span 2;
     grid-row: 4;
@@ -86,4 +80,15 @@
     height: 150px;
     background: black;
     color: white;
+}
+
+@media only screen and (max-width: 668px) {
+    .header {
+        padding: 0 44px;
+        font-size: 16px;
+    }
+
+    .divider {
+        grid-row: 3;
+    }
 }

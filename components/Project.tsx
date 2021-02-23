@@ -2,7 +2,7 @@ import { FC, ReactElement } from 'react';
 import { Parallax } from 'react-parallax';
 import classNames from 'classnames';
 
-import styles from './Project.module.css';
+import styles from './styles/Project.module.css';
 
 type Props = {
     color: string;
