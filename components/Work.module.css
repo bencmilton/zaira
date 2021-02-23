@@ -31,3 +31,11 @@
 .image {
     padding-top: 27px;
 }
+
+@media only screen and (max-width: 668px) {
+    .container {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        overflow: auto;
+    }
+}

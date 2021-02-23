@@ -4,10 +4,10 @@ import Link from './Link';
 import styles from './AboutMe.module.css';
 
 const AboutMe: FC = () => (
-    <div className={styles.aboutMe}>
-        <div className={styles.aboutMeHeaderContainer}>
-            <div className={styles.aboutMeHeader}>THE WOMAN</div>
-            <div className={styles.aboutMeSubheader}>
+    <div className={styles.container}>
+        <div className={styles.innerContainer}>
+            <div className={styles.header}>THE WOMAN</div>
+            <div className={styles.subHeader}>
                 So, here’s me. And since you asked, Zaira rhymes with
                 Tyra, as in Banks.
             </div>
@@ -28,44 +28,44 @@ const AboutMe: FC = () => (
                 height={390}
             />
         </picture>
-        <div className={styles.aboutMeBeliefs}>
+        <div className={styles.beliefs}>
             <div>A few things I believe in:</div>
-            <ul className={styles.aboutMeList}>
-                <li className={styles.aboutMeListItem}>
+            <ul className={styles.list}>
+                <li className={styles.listItem}>
                     <Link
-                        className={styles.aboutMeLink}
+                        className={styles.link}
                         href="https://www.americaneedsyou.org/locations/nyny/ny-young-leadership-board/"
                     >
                         The power of mentorship
                     </Link>
                 </li>
-                <li className={styles.aboutMeListItem}>
+                <li className={styles.listItem}>
                     <Link
-                        className={styles.aboutMeLink}
+                        className={styles.link}
                         href="https://www.nytimes.com/2014/06/15/travel/finding-mexico-city-and-luis-barragan-again.html"
                     >
                         Good design
                     </Link>
                 </li>
-                <li className={styles.aboutMeListItem}>
+                <li className={styles.listItem}>
                     <Link
-                        className={styles.aboutMeLink}
+                        className={styles.link}
                         href="https://www.nypl.org/"
                     >
                         Continued learning
                     </Link>
                 </li>
-                <li className={styles.aboutMeListItem}>
+                <li className={styles.listItem}>
                     <Link
-                        className={styles.aboutMeLink}
+                        className={styles.link}
                         href="https://youtu.be/KXg5JSKVlPU"
                     >
                         NYC magic
                     </Link>
                 </li>
-                <li className={styles.aboutMeListItem}>
+                <li className={styles.listItem}>
                     <Link
-                        className={styles.aboutMeLink}
+                        className={styles.link}
                         href="https://www.instagram.com/p/B4n8zYZFSh_/"
                     >
                         A cold martini (always gin)
