@@ -14,7 +14,9 @@ const PROJECTS = [
             'With Covid-19 accelerating a focus on home and consumer confidence growing online, Snowe can leverage their whole-home offering to establish category dominance.',
         action:
             'Conducted a brand audit, created a brand identity model, and pulled market research and consumer insights to craft actionable recommendations.',
-        imageUrl: '/70-Pine_Living-Room-1280w.webp',
+        imageUrl: '/the_work_1-1220w.png',
+        imageAlt:
+            'A presentation slide describing American consumer shopping behavior with lifestyle images from home company Snowe.',
         recommendation: (
             <span>
                 Snowe can win by building community, adopting social
@@ -47,7 +49,9 @@ const PROJECTS = [
                 </p>
             </span>
         ),
-        imageUrl: '/CPG_Grocery_GTM.webp',
+        imageUrl: '/the_work_2-1220w.png',
+        imageAlt:
+            'A mood board for a CPG brand including blue, pink and brown tones, food photography, and a Mexican inspired graphic.',
     },
     {
         title: 'INNOVATING BRICK & MORTAR',
@@ -77,7 +81,9 @@ const PROJECTS = [
                 </p>
             </span>
         ),
-        imageUrl: '/70-Pine_Living-Room-1280w.webp',
+        imageUrl: '/the_work_3-1220w.png',
+        imageAlt:
+            'A living room decorated with cream, black, and brown tone furniture, framed by windows and natural light.',
     },
     {
         title: 'TARGETING B2B2C',
@@ -100,7 +106,9 @@ const PROJECTS = [
                 </p>
             </span>
         ),
-        imageUrl: '/70-Pine_Living-Room-1280w.webp',
+        imageUrl: '/the_work_4-1220w.png',
+        imageAlt:
+            'A website landing page sharing information for a B2B account sign up.',
     },
     {
         title: 'BUILDING AN OMNICHANNEL STRATEGY',
@@ -122,7 +130,9 @@ const PROJECTS = [
                 </p>
             </span>
         ),
-        imageUrl: '/70-Pine_Living-Room-1280w.webp',
+        imageUrl: '/the_work_5-1220w.png',
+        imageAlt:
+            'An inspirational wedding table and lounge set up in wood and cream tones with a variety of chairs and furniture and a hanging driftwood accent.',
     },
 ];
 

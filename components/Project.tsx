@@ -10,6 +10,7 @@ type Props = {
     title: string;
     subtitle: string;
     imageUrl: string;
+    imageAlt: string;
     insight: string;
     action: string;
     outcome?: string | ReactElement;
@@ -22,6 +23,7 @@ const Project: FC<Props> = ({
     title,
     subtitle,
     imageUrl,
+    imageAlt,
     insight,
     action,
     outcome,
@@ -39,7 +41,12 @@ const Project: FC<Props> = ({
             </div>
             <div className={styles.body}>
                 <div className={styles.imageContainer}>
-                    <img src={imageUrl} width={580} height={427} />
+                    <img
+                        src={imageUrl}
+                        alt={imageAlt}
+                        width={610}
+                        height={342}
+                    />
                 </div>
                 <div className={styles.infoContainer}>
                     <div className={styles.insights}>
@@ -52,13 +59,17 @@ const Project: FC<Props> = ({
                     </div>
                     {outcome && (
                         <div className={styles.insights}>
-                            <span className={styles.bold}>Outcome:</span>
+                            <span className={styles.bold}>
+                                Outcome:
+                            </span>
                             <span>{outcome}</span>
                         </div>
                     )}
                     {recommendation && (
                         <div className={styles.insights}>
-                            <span className={styles.bold}>Recommendation:</span>
+                            <span className={styles.bold}>
+                                Recommendation:
+                            </span>
                             <span>{recommendation}</span>
                         </div>
                     )}

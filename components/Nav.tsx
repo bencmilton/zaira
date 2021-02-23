@@ -34,17 +34,28 @@ const Nav: FC = () => {
             >
                 <ul className={styles.navItems}>
                     <li>
-                        <Link openNewWindow={false} className={styles.link} href="/">
+                        <Link
+                            openNewWindow={false}
+                            className={styles.link}
+                            href="/"
+                        >
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link openNewWindow={false} className={styles.link} href="/projects">
-                            Projects
+                        <Link
+                            openNewWindow={false}
+                            className={styles.link}
+                            href="/work"
+                        >
+                            Work
                         </Link>
                     </li>
                     <li>
-                        <Link className={styles.link} href={resumeUrl}>
+                        <Link
+                            className={styles.link}
+                            href={resumeUrl}
+                        >
                             Resume
                         </Link>
                     </li>
