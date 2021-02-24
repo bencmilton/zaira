@@ -23,9 +23,7 @@
 
 .socialLinks {
     background: var(--zaira-red);
-    list-style: none;
     padding: 0 132px;
-    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;

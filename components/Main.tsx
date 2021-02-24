@@ -46,7 +46,7 @@ const Main: FC = () => (
         <div className={styles.substack}>
             <Link
                 underline={false}
-                href="https://zaira.substack.com/welcome"
+                href="https://perpetualplay.substack.com/"
             >
                 Substack
             </Link>

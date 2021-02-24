@@ -53,6 +53,12 @@ const PageLayout: FC<Props> = ({ pageTitle, children }) => (
                 width: 100%;
                 height: 100%;
             }
+
+            ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
         `}</style>
     </div>
 );

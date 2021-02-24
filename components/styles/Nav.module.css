@@ -1,11 +1,18 @@
 .navContainer {
     position: fixed;
     z-index: 4;
-    padding: 18px 9px;
     width: 100%;
 }
 
-.foo {
+.navInnerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px;
+    width: 100%;
+}
+
+.contentWrapper {
     position: fixed;
     z-index: 3;
     padding: 18px 9px;
@@ -14,12 +21,11 @@
     overflow: scroll;
 }
 
-.fooHidden {
+.contentWrapperHidden {
     z-index: -1;
 }
 
 .navLogo {
-    position: absolute;
     font-size: 22px;
     width: 50px;
     height: 50px;
@@ -62,15 +68,37 @@
     position: relative;
 }
 
+.socialLinks {
+    opacity: 0;
+}
+
+.socialLinksOpen {
+    display: flex;
+    opacity: 1;
+    transition: opacity 0.8s linear;
+}
+
+.socialLink {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: var(--zaira-red);
+}
+
+.socialLinkItem {
+    margin-right: 10px;
+}
+
+.socialLinkItem:last-child {
+    margin-right: 0;
+}
+
 .closeButton {
     opacity: 0;
 }
 
 .closeButtonOpen {
     z-index: 4;
-    position: absolute;
-    right: 50px;
-    top: 20px;
     font-size: 32px;
     color: var(--zaira-red);
     font-weight: bold;
@@ -98,7 +126,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    list-style: none;
     padding: 20px;
 }
 

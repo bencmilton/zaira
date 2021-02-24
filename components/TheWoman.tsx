@@ -30,7 +30,7 @@ const TheWoman: FC = () => (
         </picture>
         <div className={styles.beliefs}>
             <div>A few things I believe in:</div>
-            <ul className={styles.list}>
+            <ul>
                 <li className={styles.listItem}>
                     <Link
                         className={styles.link}
