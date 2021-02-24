@@ -4,7 +4,7 @@ import Project from './Project';
 import Link from './Link';
 import styles from './styles/Projects.module.css';
 
-const PROJECTS = [
+export const PROJECTS = [
     {
         title: 'DIFFERENTIATING A DTC BRAND',
         subtitle:

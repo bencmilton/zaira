@@ -3,6 +3,7 @@ import { Parallax } from 'react-parallax';
 import classNames from 'classnames';
 
 import styles from './styles/Project.module.css';
+import colors from './styles/colors.module.css';
 
 type Props = {
     color: string;
@@ -29,7 +30,7 @@ const Project: FC<Props> = ({
     outcome,
     recommendation,
 }) => (
-    <Parallax blur={10} className={styles[color]} strength={200}>
+    <Parallax blur={10} className={colors[color]} strength={200}>
         <div
             className={classNames(styles.container, {
                 [styles.fontColorBlack]: fontColor === 'black',

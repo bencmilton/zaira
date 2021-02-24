@@ -3,7 +3,9 @@ import classNames from 'classnames';
 
 import Link from './Link';
 import { emailUrl, resumeUrl } from './links';
+import { PROJECTS } from './Projects';
 import styles from './styles/Nav.module.css';
+import colors from './styles/colors.module.css';
 
 const Nav: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +15,7 @@ const Nav: FC = () => {
     });
 
     return (
-        <div className={styles.navContainer}>
+        <header className={styles.navContainer}>
             <div
                 onClick={() => setIsOpen(!isOpen)}
                 className={classNames(styles.navLogo, {
@@ -27,46 +29,59 @@ const Nav: FC = () => {
                 </>
             </div>
             <div
-                className={classNames(styles.navContent, {
-                    [styles.showNavContent]: !isOpen,
+                className={classNames(styles.closeButton, {
+                    [styles.closeButtonOpen]: isOpen,
                 })}
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={() => setIsOpen(false)}
+            >
+                X
+            </div>
+            <nav
+                tabIndex={1}
+                className={classNames(styles.navContent, {
+                    [styles.showNavContent]: isOpen,
+                })}
             >
                 <ul className={styles.navItems}>
-                    <li>
+                    <li key="nav-link-home">
                         <Link
                             openNewWindow={false}
                             className={styles.link}
                             href="/"
                         >
-                            Home
+                            HOME
                         </Link>
                     </li>
-                    <li>
-                        <Link
-                            openNewWindow={false}
-                            className={styles.link}
-                            href="/work"
-                        >
-                            Work
-                        </Link>
-                    </li>
-                    <li>
+                    <li key="nav-link-resume">
                         <Link
                             className={styles.link}
                             href={resumeUrl}
                         >
-                            Resume
+                            RESUME
                         </Link>
                     </li>
                     <li>
                         <Link className={styles.link} href={emailUrl}>
-                            Contact
+                            CONTACT
                         </Link>
                     </li>
+                    {PROJECTS.map(project => (
+                        <li key={`nav-link-${project.title}`}>
+                            <Link
+                                openNewWindow={false}
+                                className={classNames(
+                                    styles.link,
+                                    colors[project.color]
+                                )}
+                                href="/work"
+                            >
+                                {project.title}
+                            </Link>
+                        </li>
+                    ))}
                 </ul>
-            </div>
-        </div>
+            </nav>
+        </header>
     );
 };
 

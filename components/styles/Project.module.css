@@ -50,23 +50,3 @@
     font-weight: bold;
     margin-right: 5px;
 }
-
-.yellow {
-    background: var(--zaira-yellow);
-}
-
-.green {
-    background: var(--zaira-green);
-}
-
-.blue {
-    background: var(--zaira-blue);
-}
-
-.red {
-    background: var(--zaira-red);
-}
-
-.black {
-    background: black;
-}
