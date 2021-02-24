@@ -57,11 +57,7 @@ const Nav: FC = () => {
                     </div>
                 </div>
             </header>
-            <div
-                className={classNames(styles.contentWrapper, {
-                    [styles.contentWrapperHidden]: !isOpen,
-                })}
-            >
+            <div className={styles.contentWrapper}>
                 <nav
                     tabIndex={1}
                     className={classNames(styles.navContent, {
