@@ -15,73 +15,84 @@ const Nav: FC = () => {
     });
 
     return (
-        <header className={styles.navContainer}>
+        <>
+            <header className={styles.navContainer}>
+                <div
+                    onClick={() => setIsOpen(!isOpen)}
+                    className={classNames(styles.navLogo, {
+                        [styles.isOpen]: isOpen,
+                    })}
+                >
+                    <>
+                        <div className={navLogoLetterStyle}>Z</div>
+                        <div className={navLogoLetterStyle}>S</div>
+                        <div className={navLogoLetterStyle}>V</div>
+                    </>
+                </div>
+                <div
+                    className={classNames(styles.closeButton, {
+                        [styles.closeButtonOpen]: isOpen,
+                    })}
+                    onClick={() => setIsOpen(false)}
+                >
+                    X
+                </div>
+            </header>
             <div
-                onClick={() => setIsOpen(!isOpen)}
-                className={classNames(styles.navLogo, {
-                    [styles.isOpen]: isOpen,
+                className={classNames(styles.foo, {
+                    [styles.fooHidden]: !isOpen,
                 })}
             >
-                <>
-                    <div className={navLogoLetterStyle}>Z</div>
-                    <div className={navLogoLetterStyle}>S</div>
-                    <div className={navLogoLetterStyle}>V</div>
-                </>
-            </div>
-            <div
-                className={classNames(styles.closeButton, {
-                    [styles.closeButtonOpen]: isOpen,
-                })}
-                onClick={() => setIsOpen(false)}
-            >
-                X
-            </div>
-            <nav
-                tabIndex={1}
-                className={classNames(styles.navContent, {
-                    [styles.showNavContent]: isOpen,
-                })}
-            >
-                <ul className={styles.navItems}>
-                    <li key="nav-link-home">
-                        <Link
-                            openNewWindow={false}
-                            className={styles.link}
-                            href="/"
-                        >
-                            HOME
-                        </Link>
-                    </li>
-                    <li key="nav-link-resume">
-                        <Link
-                            className={styles.link}
-                            href={resumeUrl}
-                        >
-                            RESUME
-                        </Link>
-                    </li>
-                    <li>
-                        <Link className={styles.link} href={emailUrl}>
-                            CONTACT
-                        </Link>
-                    </li>
-                    {PROJECTS.map(project => (
-                        <li key={`nav-link-${project.title}`}>
+                <nav
+                    tabIndex={1}
+                    className={classNames(styles.navContent, {
+                        [styles.showNavContent]: isOpen,
+                    })}
+                >
+                    <ul className={styles.navItems}>
+                        <li key="nav-link-home">
                             <Link
                                 openNewWindow={false}
-                                className={classNames(
-                                    styles.link,
-                                    colors[project.color]
-                                )}
-                                href="/work"
+                                className={styles.link}
+                                href="/"
                             >
-                                {project.title}
+                                HOME
                             </Link>
                         </li>
-                    ))}
-                </ul>
-            </nav>
-        </header>
+                        <li key="nav-link-resume">
+                            <Link
+                                className={styles.link}
+                                href={resumeUrl}
+                            >
+                                RESUME
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                className={styles.link}
+                                href={emailUrl}
+                            >
+                                CONTACT
+                            </Link>
+                        </li>
+                        {PROJECTS.map(project => (
+                            <li key={`nav-link-${project.title}`}>
+                                <Link
+                                    openNewWindow={false}
+                                    className={classNames(
+                                        styles.link,
+                                        colors[project.color]
+                                    )}
+                                    href="/work"
+                                >
+                                    {project.title}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
+            </div>
+        </>
     );
 };
 
