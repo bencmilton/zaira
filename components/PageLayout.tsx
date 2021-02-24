@@ -59,6 +59,10 @@ const PageLayout: FC<Props> = ({ pageTitle, children }) => (
                 padding: 0;
                 margin: 0;
             }
+
+            .noscroll {
+                overflow: hidden;
+            }
         `}</style>
     </div>
 );

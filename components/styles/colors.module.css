@@ -1,17 +1,21 @@
 .yellow {
     background: var(--zaira-yellow);
+    border-color: var(--zaira-yellow);
 }
 
 .green {
     background: var(--zaira-green);
+    border-color: var(--zaira-green);
 }
 
 .blue {
     background: var(--zaira-blue);
+    border-color: var(--zaira-blue);
 }
 
 .red {
     background: var(--zaira-red);
+    border-color: var(--zaira-red);
 }
 
 .black {

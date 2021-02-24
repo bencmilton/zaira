@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useState, useEffect } from 'react';
 import classNames from 'classnames';
 
 import Link from './Link';
@@ -10,6 +10,14 @@ import colors from './styles/colors.module.css';
 
 const Nav: FC = () => {
     const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.classList.add('noscroll');
+        } else {
+            document.body.classList.remove('noscroll');
+        }
+    }, [isOpen]);
 
     const navLogoLetterStyle = classNames(styles.navLogoLetter, {
         [styles.rotateLetter]: isOpen,
@@ -57,12 +65,16 @@ const Nav: FC = () => {
                     </div>
                 </div>
             </header>
-            <div className={styles.contentWrapper}>
+            <div
+                className={classNames(styles.contentWrapper, {
+                    [styles.showContentWrapper]: isOpen,
+                })}
+                onClick={() => setIsOpen(false)}
+            >
                 <nav
                     tabIndex={1}
-                    className={classNames(styles.navContent, {
-                        [styles.showNavContent]: isOpen,
-                    })}
+                    className={styles.navContent}
+                    onClick={event => event.stopPropagation()}
                 >
                     <ul className={styles.navItems}>
                         <li key="nav-link-home">

@@ -1,0 +1,7 @@
+.link {
+    transition: all 0.15s linear;
+}
+
+.link:hover {
+    fill: white;
+}

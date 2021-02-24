@@ -1,7 +1,9 @@
 import { FC } from 'react';
+import classNames from 'classnames';
 
 import Link from './Link';
 import { linkedInUrl, instagramUrl } from './links';
+import styles from './styles/SocialLinks.module.css';
 
 type Props = {
     containerStyle: string;
@@ -16,7 +18,10 @@ const SocialLinks: FC<Props> = ({
 }) => (
     <ul className={containerStyle}>
         <li className={listItemStyle}>
-            <Link className={linkStyle} href={linkedInUrl}>
+            <Link
+                className={classNames(linkStyle, styles.link)}
+                href={linkedInUrl}
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -28,7 +33,10 @@ const SocialLinks: FC<Props> = ({
             </Link>
         </li>
         <li className={listItemStyle}>
-            <Link className={linkStyle} href={instagramUrl}>
+            <Link
+                className={classNames(linkStyle, styles.link)}
+                href={instagramUrl}
+            >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
