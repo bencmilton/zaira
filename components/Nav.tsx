@@ -53,7 +53,9 @@ const Nav: FC = () => {
                             }
                         )}
                         listItemStyle={styles.socialLinkItem}
-                        linkStyle={styles.socialLink}
+                        linkStyle={classNames(styles.socialLink, {
+                            [styles.linkDisabled]: !isOpen,
+                        })}
                     />
                     <div
                         className={classNames(styles.closeButton, {
@@ -116,7 +118,7 @@ const Nav: FC = () => {
                                         styles.link,
                                         colors[project.color]
                                     )}
-                                    href="/work"
+                                    href={`/work?project=${project.id}`}
                                 >
                                     {project.title}
                                 </Link>

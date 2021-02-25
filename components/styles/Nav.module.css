@@ -129,6 +129,10 @@
     font-weight: bold;
 }
 
+.linkDisabled {
+    pointer-events: none;
+}
+
 .navItems {
     margin-top: 90px;
     display: flex;

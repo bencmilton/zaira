@@ -4,8 +4,18 @@
 }
 
 .header {
-    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     padding: 0 96px;
     background: var(--zaira-tan);
     height: 100px;
+}
+
+@media only screen and (max-width: 668px) {
+    .header {
+        justify-content: center;
+        height: 60px;
+        padding: 0;
+    }
 }

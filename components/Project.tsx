@@ -6,6 +6,7 @@ import styles from './styles/Project.module.css';
 import colors from './styles/colors.module.css';
 
 type Props = {
+    id: string;
     color: string;
     fontColor?: string;
     title: string;
@@ -16,9 +17,11 @@ type Props = {
     action: string;
     outcome?: string | ReactElement;
     recommendation?: string | ReactElement;
+    status: string;
 };
 
 const Project: FC<Props> = ({
+    id,
     color,
     fontColor,
     title,
@@ -29,9 +32,11 @@ const Project: FC<Props> = ({
     action,
     outcome,
     recommendation,
+    status,
 }) => (
     <Parallax blur={10} className={colors[color]} strength={200}>
         <div
+            id={id}
             className={classNames(styles.container, {
                 [styles.fontColorBlack]: fontColor === 'black',
             })}
@@ -64,6 +69,9 @@ const Project: FC<Props> = ({
                                 Outcome:
                             </span>
                             <span>{outcome}</span>
+                            <div className={styles.status}>
+                                {status}
+                            </div>
                         </div>
                     )}
                     {recommendation && (
@@ -72,6 +80,9 @@ const Project: FC<Props> = ({
                                 Recommendation:
                             </span>
                             <span>{recommendation}</span>
+                            <div className={styles.status}>
+                                {status}
+                            </div>
                         </div>
                     )}
                 </div>
