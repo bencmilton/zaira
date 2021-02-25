@@ -1,0 +1,13 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.swiperContainer {
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+}
+.swiperSlide {
+    width: 100vw;
+}

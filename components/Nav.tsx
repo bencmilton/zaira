@@ -25,12 +25,16 @@ const Nav: FC = () => {
 
     return (
         <>
-            <header className={styles.navContainer}>
+            <header
+                className={classNames(styles.navContainer, {
+                    [styles.navContainerIsOpen]: isOpen,
+                })}
+            >
                 <div className={styles.navInnerContainer}>
                     <div
                         onClick={() => setIsOpen(!isOpen)}
                         className={classNames(styles.navLogo, {
-                            [styles.isOpen]: isOpen,
+                            [styles.navLogoIsOpen]: isOpen,
                         })}
                     >
                         <>
@@ -110,7 +114,7 @@ const Nav: FC = () => {
                                 CONTACT
                             </Link>
                         </li>
-                        {ALL_PROJECTS.map((project, index) => (
+                        {ALL_PROJECTS.map(project => (
                             <li key={`nav-link-${project.title}`}>
                                 <Link
                                     openNewWindow={false}
@@ -118,7 +122,7 @@ const Nav: FC = () => {
                                         styles.link,
                                         colors[project.color]
                                     )}
-                                    href={`/work#${project.id}`}
+                                    href={`/work#${project.slug}`}
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {project.title}

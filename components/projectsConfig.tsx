@@ -1,7 +1,24 @@
+import { ReactElement } from 'react';
 import Link from './Link';
 
-const DIFFERENTIATING_A_DTC = {
-    id: 'differentiating-a-dtc-brand',
+export type ProjectType = {
+    slug: string;
+    color: string;
+    fontColor?: string;
+    title: string;
+    subtitle: string;
+    imageUrl: string;
+    imageAlt: string;
+    insight: string;
+    action: string;
+    outcome?: string | ReactElement;
+    recommendation?: string | ReactElement;
+    status: string;
+    description?: string;
+};
+
+const DIFFERENTIATING_A_DTC: ProjectType = {
+    slug: 'differentiating-a-dtc-brand',
     title: 'DIFFERENTIATING A DTC BRAND',
     subtitle:
         'Using Scott Galloway’s (NYU Stern, Section4) strategy frameworks, developed recommendations for an ecommerce company.',
@@ -20,8 +37,8 @@ const DIFFERENTIATING_A_DTC = {
         'Recommendations for a DTC to win market share & transform their business to become a legacy brand.',
 };
 
-const LAUNCHING_A_GROCERY = {
-    id: 'launching-a-grocery-cpg',
+const LAUNCHING_A_GROCERY: ProjectType = {
+    slug: 'launching-a-grocery-cpg',
     title: 'LAUNCHING A GROCERY CPG',
     subtitle:
         'Bringing a brand to life from brand foundation to go to market strategy and future growth plan.',
@@ -40,8 +57,8 @@ const LAUNCHING_A_GROCERY = {
         'A pre-launch grocery CPG tapping an emerging demographic during a digital acceleration.',
 };
 
-const INNOVATING_BRICK_AND_MORTAR = {
-    id: 'innovating-brick-and-mortar',
+const INNOVATING_BRICK_AND_MORTAR: ProjectType = {
+    slug: 'innovating-brick-and-mortar',
     title: 'INNOVATING BRICK & MORTAR',
     subtitle:
         'An immersive retail experience delivered within a luxury residential high-rise in Manhattan.',
@@ -74,8 +91,8 @@ const INNOVATING_BRICK_AND_MORTAR = {
         'Innovating the retail experience to bring a collective of brands into the consumer’s home.',
 };
 
-const TARGETING_B2B2C = {
-    id: 'targeting-b2b2c',
+const TARGETING_B2B2C: ProjectType = {
+    slug: 'targeting-b2b2c',
     title: 'TARGETING B2B2C',
     subtitle:
         'Reimagined Snowe’s Trade program to be a competitive and compelling offering for design professionals.',
@@ -93,8 +110,8 @@ const TARGETING_B2B2C = {
         'A website landing page sharing information for a B2B account sign up.',
 };
 
-const BUILDING_OMNICHANNEL_STRATEGY = {
-    id: 'building-an-omnichannel-strategy',
+const BUILDING_OMNICHANNEL_STRATEGY: ProjectType = {
+    slug: 'building-an-omnichannel-strategy',
     title: 'BUILDING AN OMNICHANNEL STRATEGY',
     subtitle:
         'Developed the marketing strategy for a B2B luxury wedding vendor, with a focus on digital.',

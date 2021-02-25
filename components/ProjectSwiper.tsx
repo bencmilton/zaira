@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef } from 'react';
+import { FC, useRef } from 'react';
 import SwiperCore, {
     Keyboard,
     Mousewheel,
@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Project from './Project';
 import { ALL_PROJECTS } from './projectsConfig';
-import styles from './styles/Projects.module.css';
+import styles from './styles/ProjectSwiper.module.css';
 
 SwiperCore.use([
     Keyboard,
@@ -22,17 +22,6 @@ SwiperCore.use([
 
 const ProjectSwiper: FC = () => {
     const mySwiper = useRef(null);
-    // const params =
-    //     typeof window !== 'undefined' &&
-    //     new URLSearchParams(window.location.search);
-    // const projectParam = params && params.get('project');
-
-    // useEffect(() => {
-    //     if (projectParam) {
-    //         const el = document.getElementById(projectParam);
-    //         el.scrollIntoView(true);
-    //     }
-    // }, [projectParam]);
 
     return (
         <article className={styles.container}>
@@ -53,9 +42,9 @@ const ProjectSwiper: FC = () => {
                 >
                     {ALL_PROJECTS.map((project, index) => (
                         <SwiperSlide
-                            key={project.id}
+                            key={project.slug}
                             className={styles.swiperSlide}
-                            data-hash={project.id}
+                            data-hash={project.slug}
                         >
                             <Project {...project} />
                         </SwiperSlide>

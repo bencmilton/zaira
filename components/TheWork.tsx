@@ -8,18 +8,18 @@ const TheWork: FC = () => (
     <div className={styles.container}>
         <div className={styles.header}>THE WORK</div>
         {HOME_PAGE_PROJECTS.map(project => (
-            <div key={project.id} className={styles.section}>
+            <div key={project.slug} className={styles.section}>
                 {project.description}{' '}
                 <Link
                     openNewWindow={false}
                     className={styles.link}
-                    href={`/work#${project.id}`}
+                    href={`/work#${project.slug}`}
                 >
                     See More.
                 </Link>
                 <Link
                     openNewWindow={false}
-                    href={`/work#${project.id}`}
+                    href={`/work#${project.slug}`}
                 >
                     <img
                         className={styles.image}
