@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 import Link from './Link';
 import { emailUrl, resumeUrl } from './links';
-import { PROJECTS } from './Projects';
+import { ALL_PROJECTS } from './projectsConfig';
 import SocialLinks from './SocialLinks';
 import styles from './styles/Nav.module.css';
 import colors from './styles/colors.module.css';
@@ -110,7 +110,7 @@ const Nav: FC = () => {
                                 CONTACT
                             </Link>
                         </li>
-                        {PROJECTS.map(project => (
+                        {ALL_PROJECTS.map((project, index) => (
                             <li key={`nav-link-${project.title}`}>
                                 <Link
                                     openNewWindow={false}
@@ -118,7 +118,8 @@ const Nav: FC = () => {
                                         styles.link,
                                         colors[project.color]
                                     )}
-                                    href={`/work?project=${project.id}`}
+                                    href={`/work#${project.id}`}
+                                    onClick={() => setIsOpen(false)}
                                 >
                                     {project.title}
                                 </Link>

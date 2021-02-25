@@ -1,8 +1,4 @@
-import { FC, useEffect } from 'react';
-
-import Project from './Project';
 import Link from './Link';
-import styles from './styles/Projects.module.css';
 
 const DIFFERENTIATING_A_DTC = {
     id: 'differentiating-a-dtc-brand',
@@ -123,37 +119,10 @@ export const HOME_PAGE_PROJECTS = [
 ];
 
 // Used on "THE WORK" page ("/work")
-export const PROJECTS = [
+export const ALL_PROJECTS = [
     DIFFERENTIATING_A_DTC,
     LAUNCHING_A_GROCERY,
     INNOVATING_BRICK_AND_MORTAR,
     TARGETING_B2B2C,
     BUILDING_OMNICHANNEL_STRATEGY,
 ];
-
-const Projects: FC = () => {
-    const params =
-        typeof window !== 'undefined' &&
-        new URLSearchParams(window.location.search);
-    const projectParam = params && params.get('project');
-
-    useEffect(() => {
-        if (projectParam) {
-            const el = document.getElementById(projectParam);
-            el.scrollIntoView(true);
-        }
-    }, [projectParam]);
-
-    return (
-        <article className={styles.container}>
-            <header className={styles.header}>
-                <h1>THE WORK</h1>
-            </header>
-            {PROJECTS.map(project => (
-                <Project key={project.id} {...project} />
-            ))}
-        </article>
-    );
-};
-
-export default Projects;

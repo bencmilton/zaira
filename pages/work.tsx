@@ -1,11 +1,11 @@
 import { FC } from 'react';
 
 import PageLayout from '../components/PageLayout';
-import Projects from '../components/Projects';
+import ProjectSwiper from '../components/ProjectSwiper';
 
 const ProjectsPage: FC = () => (
     <PageLayout pageTitle="Zaira Stefani Vallejo -- Projects">
-        <Projects />
+        <ProjectSwiper />
     </PageLayout>
 );
 

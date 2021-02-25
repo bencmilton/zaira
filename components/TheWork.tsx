@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
 import Link from './Link';
-import { HOME_PAGE_PROJECTS } from './Projects';
+import { HOME_PAGE_PROJECTS } from './projectsConfig';
 import styles from './styles/TheWork.module.css';
 
 const TheWork: FC = () => (
@@ -13,13 +13,13 @@ const TheWork: FC = () => (
                 <Link
                     openNewWindow={false}
                     className={styles.link}
-                    href={`/work?project=${project.id}`}
+                    href={`/work#${project.id}`}
                 >
                     See More.
                 </Link>
                 <Link
                     openNewWindow={false}
-                    href={`/work?project=${project.id}`}
+                    href={`/work#${project.id}`}
                 >
                     <img
                         className={styles.image}
