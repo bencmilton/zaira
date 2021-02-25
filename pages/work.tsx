@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
-import PageLayout from '../components/PageLayout';
-import ProjectSwiper from '../components/ProjectSwiper';
+import PageLayout from '../components/layout/PageLayout';
+import ProjectSwiper from '../components/projects/ProjectSwiper';
 
 const ProjectsPage: FC = () => (
     <PageLayout

@@ -2,8 +2,9 @@
     display: flex;
     flex-direction: column;
     padding: 42px 96px 48px 96px;
-    text-align: left;
+    text-align: right;
     color: white;
+    height: 100%;
 }
 
 .fontColorBlack {
@@ -11,20 +12,13 @@
 }
 
 .header {
+    text-align: right;
     padding-bottom: 9px;
 }
 
 .title {
-    text-align: right;
     font-size: 20px;
     font-weight: bold;
-}
-
-.backButton {
-    transform: rotate(180deg);
-    margin-right: 10px;
-    display: inline-block;
-    margin-right: 10px;
 }
 
 .subtitle {
@@ -51,44 +45,19 @@
     width: 100%;
 }
 
-.infoContainer {
-    flex-direction: column;
-}
-
-.insights {
-    height: 50%;
-    padding: 18px;
-}
-
-.status {
-    padding-top: 18px;
-    font-style: italic;
-}
-
-.bold {
+.link:hover {
+    color: white;
     font-weight: bold;
-    margin-right: 5px;
 }
 
 @media only screen and (max-width: 668px) {
     .container {
-        padding: 36px 28px;
+        height: 100%;
+        padding: 150px 28px;
         font-size: 16px;
     }
 
     .body {
         flex-direction: column;
-    }
-
-    .infoContainer {
-        width: 100%;
-        align-items: flex-start;
-        justify-content: flex-start;
-        align-content: flex-start;
-    }
-
-    .insights {
-        height: auto;
-        padding: 12px 0 0;
     }
 }

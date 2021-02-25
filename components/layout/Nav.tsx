@@ -1,12 +1,12 @@
 import { FC, useState, useEffect } from 'react';
 import classNames from 'classnames';
 
-import Link from './Link';
-import { emailUrl, resumeUrl } from './links';
-import { ALL_PROJECTS } from './projectsConfig';
-import SocialLinks from './SocialLinks';
+import Link from '../shared/Link';
+import SocialLinks from '../shared/SocialLinks';
+import { emailUrl, resumeUrl } from '../shared/links';
+import colors from '../shared/styles/colors.module.css';
+import { ALL_PROJECTS } from '../projects/projectsConfig';
 import styles from './styles/Nav.module.css';
-import colors from './styles/colors.module.css';
 
 const Nav: FC = () => {
     const [isOpen, setIsOpen] = useState(false);

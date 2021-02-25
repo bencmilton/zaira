@@ -1,9 +1,9 @@
 import { FC } from 'react';
 
-import Link from './Link';
+import Link from '../shared/Link';
+import { emailUrl, resumeUrl } from '../shared/links';
 import TheWoman from './TheWoman';
 import TheWork from './TheWork';
-import { emailUrl, resumeUrl } from './links';
 import styles from './styles/Main.module.css';
 
 const Main: FC = () => (

@@ -1,16 +1,16 @@
 import { FC } from 'react';
 import classNames from 'classnames';
 
-import Link from './Link';
+import Link from '../shared/Link';
+import colors from '../shared/styles/colors.module.css';
 import { ProjectType } from './projectsConfig';
-import styles from './styles/WorkDetails.module.css';
-import colors from './styles/colors.module.css';
+import styles from './styles/ProjectDetails.module.css';
 
 type Props = {
     project: ProjectType;
 };
 
-const WorkDetails: FC<Props> = ({ project }) => {
+const ProjectDetails: FC<Props> = ({ project }) => {
     const {
         color,
         fontColor,
@@ -23,6 +23,7 @@ const WorkDetails: FC<Props> = ({ project }) => {
         outcome,
         recommendation,
         status,
+        slug,
     } = project;
 
     return (
@@ -34,7 +35,7 @@ const WorkDetails: FC<Props> = ({ project }) => {
             <div className={styles.header}>
                 <div className={styles.title}>
                     <Link
-                        href="/work"
+                        href={`/work#${slug}`}
                         underline={false}
                         openNewWindow={false}
                         className={styles.backButton}
@@ -82,4 +83,4 @@ const WorkDetails: FC<Props> = ({ project }) => {
     );
 };
 
-export default WorkDetails;
+export default ProjectDetails;

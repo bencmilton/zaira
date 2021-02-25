@@ -1,9 +1,9 @@
 import { FC } from 'react';
 import classNames from 'classnames';
 
-import Link from './Link';
+import Link from '../shared/Link';
+import colors from '../shared/styles/colors.module.css';
 import styles from './styles/Project.module.css';
-import colors from './styles/colors.module.css';
 
 type Props = {
     slug: string;
@@ -36,7 +36,7 @@ const Project: FC<Props> = ({
             href={`/work/${slug}`}
         >
             <div className={styles.header}>
-                <div className={styles.title}>{title}</div>
+                <div className={styles.title}>{title} →</div>
                 <div className={styles.subtitle}>{subtitle}</div>
             </div>
             <div className={styles.body}>

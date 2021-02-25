@@ -1,7 +1,7 @@
 import { FC } from 'react';
 
-import Link from './Link';
-import { HOME_PAGE_PROJECTS } from './projectsConfig';
+import Link from '../shared/Link';
+import { HOME_PAGE_PROJECTS } from '../projects/projectsConfig';
 import styles from './styles/TheWork.module.css';
 
 const TheWork: FC = () => (

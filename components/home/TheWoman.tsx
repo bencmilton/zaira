@@ -1,6 +1,6 @@
 import { FC } from 'react';
 
-import Link from './Link';
+import Link from '../shared/Link';
 import styles from './styles/TheWoman.module.css';
 
 const TheWoman: FC = () => (

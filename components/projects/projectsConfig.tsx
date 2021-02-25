@@ -1,5 +1,5 @@
 import { ReactElement } from 'react';
-import Link from './Link';
+import Link from '../shared/Link';
 
 export type ProjectType = {
     slug: string;
