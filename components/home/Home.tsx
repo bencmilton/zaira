@@ -4,7 +4,7 @@ import Link from '../shared/Link';
 import { emailUrl, resumeUrl } from '../shared/links';
 import TheWoman from './TheWoman';
 import TheWork from './TheWork';
-import styles from './styles/Main.module.css';
+import styles from './styles/Home.module.css';
 
 const Main: FC = () => (
     <article className={styles.container}>

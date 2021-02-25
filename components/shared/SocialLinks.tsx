@@ -21,6 +21,7 @@ const SocialLinks: FC<Props> = ({
             <Link
                 className={classNames(linkStyle, styles.link)}
                 href={linkedInUrl}
+                title="Zaira's LinkedIn"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -36,6 +37,7 @@ const SocialLinks: FC<Props> = ({
             <Link
                 className={classNames(linkStyle, styles.link)}
                 href={instagramUrl}
+                title="Zaira's Instagram"
             >
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

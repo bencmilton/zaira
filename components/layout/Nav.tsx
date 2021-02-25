@@ -78,7 +78,6 @@ const Nav: FC = () => {
                 onClick={() => setIsOpen(false)}
             >
                 <nav
-                    tabIndex={1}
                     className={styles.navContent}
                     onClick={event => event.stopPropagation()}
                 >
