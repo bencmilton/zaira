@@ -6,11 +6,13 @@ import Footer from './Footer';
 
 type Props = {
     pageTitle: string;
+    pageDescription: string;
     showFooter?: boolean;
 };
 
 const PageLayout: FC<Props> = ({
     pageTitle,
+    pageDescription,
     showFooter = true,
     children,
 }) => {
@@ -40,10 +42,8 @@ const PageLayout: FC<Props> = ({
                     name="viewport"
                     content="initial-scale=1.0, width=device-width"
                 />
-                <meta
-                    name="description"
-                    content="Welcome to Zaira Stefani Vallejo's personal website!"
-                />
+                <meta name="title" content={pageTitle} />
+                <meta name="description" content={pageDescription} />
             </Head>
             <Nav />
             <main>

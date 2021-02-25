@@ -1,24 +1,16 @@
 import { FC } from 'react';
-import { useRouter } from 'next/router';
 import classNames from 'classnames';
 
 import Link from './Link';
-import { ALL_PROJECTS } from './projectsConfig';
+import { ProjectType } from './projectsConfig';
 import styles from './styles/WorkDetails.module.css';
 import colors from './styles/colors.module.css';
 
-const WorkDetails: FC = () => {
-    const router = useRouter();
-    const { slug } = router.query;
-    const project = ALL_PROJECTS.find(proj => proj.slug === slug);
+type Props = {
+    project: ProjectType;
+};
 
-    if (!project) {
-        if (typeof window !== 'undefined') {
-            window.open('/');
-        }
-        return null;
-    }
-
+const WorkDetails: FC<Props> = ({ project }) => {
     const {
         color,
         fontColor,
@@ -31,7 +23,7 @@ const WorkDetails: FC = () => {
         outcome,
         recommendation,
         status,
-    } = project || {};
+    } = project;
 
     return (
         <div
