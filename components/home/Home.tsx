@@ -61,14 +61,10 @@ const Main: FC = () => (
 /ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg_c_scale,w_1200.jpg 1200w,
 /ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg_c_scale,w_2000.jpg 2000w"
                     src="/ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg_c_scale,w_2000.jpg"
-                    alt=""
+                    className={styles.image}
+                    alt="Zaira's strategy process chart"
                 />
             </picture>
-            <ResponsiveImage
-                filename="/ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg"
-                className={styles.image}
-                imageAlt="Zaira's strategy process chart"
-            />
         </div>
         <TheWoman />
         <TheWork />
