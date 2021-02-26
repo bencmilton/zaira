@@ -69,7 +69,10 @@ const Main: FC = () => (
         <TheWoman />
         <TheWork />
         <div className={styles.divider}>
-            "Lorem ipsum dolor sit amet" -- Puff
+            <div>
+                "Okay, let's try that again, but this time good."
+            </div>
+            <div>- David Lynch</div>
         </div>
         <div className={styles.substack}>
             <Link
