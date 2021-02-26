@@ -33,6 +33,7 @@
 }
 
 .imageContainer {
+    text-align: center;
     width: 100vw;
     position: relative;
     left: 50%;

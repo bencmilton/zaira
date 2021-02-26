@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
 import Link from '../shared/Link';
+import ResponsiveImage from '../shared/ResponsiveImage';
 import { emailUrl, resumeUrl } from '../shared/links';
 import TheWoman from './TheWoman';
 import TheWork from './TheWork';
@@ -32,10 +33,41 @@ const Main: FC = () => (
             </p>
         </header>
         <div className={styles.imageContainer}>
-            <img
+            <picture>
+                <source
+                    media="(max-width: 767px)"
+                    sizes="(max-width: 1080px) 100vw, 1080px"
+                    srcSet="
+/ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg_ar_1_1,c_fill,g_auto__c_scale,w_480.jpg 480w,
+/ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg_ar_1_1,c_fill,g_auto__c_scale,w_1080.jpg 1080w"
+                />
+                <source
+                    media="(min-width: 768px) and (max-width: 991px)"
+                    sizes="(max-width: 1440px) 100vw, 1440px"
+                    srcSet="
+/ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg_ar_4_3,c_fill,g_auto__c_scale,w_768.jpg 768w,
+/ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg_ar_4_3,c_fill,g_auto__c_scale,w_1440.jpg 1440w"
+                />
+                <source
+                    media="(min-width: 992px) and (max-width: 1199px)"
+                    sizes="(max-width: 1920px) 100vw, 1920px"
+                    srcSet="
+/ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg_ar_16_9,c_fill,g_auto__c_scale,w_992.jpg 992w,
+/ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg_ar_16_9,c_fill,g_auto__c_scale,w_1920.jpg 1920w"
+                />
+                <img
+                    sizes="(max-width: 2000px) 100vw, 2000px"
+                    srcSet="
+/ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg_c_scale,w_1200.jpg 1200w,
+/ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg_c_scale,w_2000.jpg 2000w"
+                    src="/ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg_c_scale,w_2000.jpg"
+                    alt=""
+                />
+            </picture>
+            <ResponsiveImage
+                filename="/ZSV_Strategy_Process_Img/ZSV_Strategy_Process_Chart.001_diazfg"
                 className={styles.image}
-                src="/matisse.png"
-                alt="Matisse cutout collage"
+                imageAlt="Zaira's strategy process chart"
             />
         </div>
         <TheWoman />

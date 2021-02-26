@@ -2,6 +2,7 @@ import { FC } from 'react';
 import classNames from 'classnames';
 
 import Link from '../shared/Link';
+import ResponsiveImage from '../shared/ResponsiveImage';
 import colors from '../shared/styles/colors.module.css';
 import styles from './styles/Project.module.css';
 
@@ -41,10 +42,10 @@ const Project: FC<Props> = ({
             </div>
             <div className={styles.body}>
                 <div className={styles.imageContainer}>
-                    <img
+                    <ResponsiveImage
+                        filename={imageUrl}
+                        imageAlt={imageAlt}
                         className={styles.image}
-                        src={imageUrl}
-                        alt={imageAlt}
                     />
                 </div>
             </div>

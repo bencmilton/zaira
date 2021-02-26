@@ -1,6 +1,6 @@
 .container {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 3;
     width: auto;
     height: 750px;
     background: white;
@@ -29,13 +29,14 @@
 }
 
 .image {
+    max-width: 100%;
     padding-top: 27px;
 }
 
 @media only screen and (max-width: 668px) {
     .container {
         grid-column: 1 / span 2;
-        grid-row: 4;
+        grid-row: 5;
         overflow: auto;
         height: auto;
     }

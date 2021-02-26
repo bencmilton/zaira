@@ -1,6 +1,7 @@
 import { FC } from 'react';
 
 import Link from '../shared/Link';
+import ResponsiveImage from '../shared/ResponsiveImage';
 import { HOME_PAGE_PROJECTS } from '../projects/projectsConfig';
 import styles from './styles/TheWork.module.css';
 
@@ -21,15 +22,15 @@ const TheWork: FC = () => (
                     openNewWindow={false}
                     href={`/work#${project.slug}`}
                 >
-                    <img
+                    <ResponsiveImage
+                        filename={project.imageUrl}
+                        imageAlt={project.imageAlt}
                         className={styles.image}
-                        src={project.imageUrl.replace(
-                            '1220w',
-                            '406w'
-                        )}
-                        width={406}
-                        height={228}
-                        alt={project.imageAlt}
+                        sizes={{
+                            '913px': '50vw',
+                            '1218px': '50vw',
+                            '1220px': '50vw',
+                        }}
                     />
                 </Link>
             </div>
