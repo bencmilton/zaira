@@ -25,19 +25,22 @@ const Project: FC<Props> = ({
     imageUrl,
     imageAlt,
 }) => (
-    <div
-        className={classNames(styles.container, colors[color], {
-            [styles.fontColorBlack]: fontColor === 'black',
-        })}
-    >
+    <div className={classNames(styles.container, colors[color])}>
         <Link
             nextLink
             underline={false}
-            className={styles.link}
+            className={classNames(styles.link, {
+                [styles.fontColorBlack]: fontColor === 'black',
+            })}
             href={`/work/${slug}`}
         >
             <div className={styles.header}>
-                <div className={styles.title}>{title} →</div>
+                <div
+                    className={classNames(styles.title, styles.arrow)}
+                >
+                    →
+                </div>
+                <div className={styles.title}>{title}</div>
                 <div className={styles.subtitle}>{subtitle}</div>
             </div>
             <div className={styles.body}>

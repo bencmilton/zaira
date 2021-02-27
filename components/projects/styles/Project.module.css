@@ -16,6 +16,10 @@
     padding-bottom: 9px;
 }
 
+.arrow {
+    margin-bottom: 9px;
+}
+
 .title {
     font-size: 20px;
     font-weight: bold;
@@ -54,11 +58,21 @@
 @media only screen and (max-width: 668px) {
     .container {
         height: 100%;
-        padding: 150px 28px;
+        padding: 50px 28px;
         font-size: 16px;
     }
 
     .body {
+        flex-direction: column;
+    }
+
+    .header {
+        width: 90%;
+    }
+
+    .link {
+        display: flex;
+        align-items: flex-end;
         flex-direction: column;
     }
 }

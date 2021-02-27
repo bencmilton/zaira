@@ -2,6 +2,7 @@ import { FC } from 'react';
 import classNames from 'classnames';
 
 import Link from '../shared/Link';
+import ResponsiveImage from '../shared/ResponsiveImage';
 import colors from '../shared/styles/colors.module.css';
 import { ProjectType } from './projectsConfig';
 import styles from './styles/ProjectDetails.module.css';
@@ -47,9 +48,9 @@ const ProjectDetails: FC<Props> = ({ project }) => {
                 <div className={styles.subtitle}>{subtitle}</div>
             </div>
             <div className={styles.imageContainer}>
-                <img
-                    src={imageUrl}
-                    alt={imageAlt}
+                <ResponsiveImage
+                    filename={imageUrl}
+                    imageAlt={imageAlt}
                     className={styles.image}
                 />
             </div>

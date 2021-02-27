@@ -22,9 +22,8 @@
 
 .backButton {
     transform: rotate(180deg);
-    margin-right: 10px;
-    display: inline-block;
-    margin-right: 10px;
+    margin-bottom: 9px;
+    display: flex;
 }
 
 .subtitle {
@@ -72,7 +71,7 @@
 
 @media only screen and (max-width: 668px) {
     .container {
-        padding: 36px 28px;
+        padding: 50px 28px;
         font-size: 16px;
     }
 

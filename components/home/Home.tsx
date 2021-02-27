@@ -33,7 +33,8 @@ const Main: FC = () => (
             </p>
         </header>
         <div className={styles.imageContainer}>
-            <picture>
+            <img src="/zaira_workflow_mobile.gif" />
+            {/* <picture>
                 <source
                     media="(max-width: 767px)"
                     sizes="(max-width: 1080px) 100vw, 1080px"
@@ -64,7 +65,7 @@ const Main: FC = () => (
                     className={styles.image}
                     alt="Zaira's strategy process chart"
                 />
-            </picture>
+            </picture> */}
         </div>
         <TheWoman />
         <TheWork />
