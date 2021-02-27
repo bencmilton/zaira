@@ -36,6 +36,7 @@ const ProjectDetails: FC<Props> = ({ project }) => {
             <div className={styles.header}>
                 <div className={styles.title}>
                     <Link
+                        nextLink
                         href={`/work#${slug}`}
                         underline={false}
                         openNewWindow={false}

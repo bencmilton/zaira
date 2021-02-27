@@ -24,15 +24,17 @@ const Link: FC<Props> = ({
     onClick = () => {},
     children,
 }) => {
-    if (nextLink) {
+    const linkClasses = classNames(styles.link, className, {
+        [styles.underline]: underline,
+    });
+
+    if (nextLink && href) {
         return (
             <NextLink href={href}>
                 <a
                     title={title}
                     onClick={onClick}
-                    className={classNames(styles.link, className, {
-                        [styles.underline]: underline,
-                    })}
+                    className={linkClasses}
                 >
                     {children}
                 </a>
@@ -47,9 +49,7 @@ const Link: FC<Props> = ({
             href={href}
             title={title}
             onClick={onClick}
-            className={classNames(styles.link, className, {
-                [styles.underline]: underline,
-            })}
+            className={linkClasses}
         >
             {children}
         </a>
