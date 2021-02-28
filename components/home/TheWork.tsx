@@ -8,33 +8,32 @@ import styles from './styles/TheWork.module.css';
 const TheWork: FC = () => (
     <div className={styles.container}>
         <div className={styles.header}>THE WORK</div>
-        {HOME_PAGE_PROJECTS.map(project => (
-            <div key={project.slug} className={styles.section}>
-                {project.description}{' '}
-                <Link
-                    openNewWindow={false}
-                    className={styles.link}
-                    href={`/work#${project.slug}`}
-                >
-                    See More.
-                </Link>
-                <Link
-                    openNewWindow={false}
-                    href={`/work#${project.slug}`}
-                >
-                    <ResponsiveImage
-                        filename={project.imageUrl}
-                        imageAlt={project.imageAlt}
-                        className={styles.image}
-                        sizes={{
-                            '913px': '50vw',
-                            '1218px': '50vw',
-                            '1220px': '50vw',
-                        }}
-                    />
-                </Link>
-            </div>
-        ))}
+        {HOME_PAGE_PROJECTS.map(
+            ({ slug, description, imageAlt, imageUrl }) => (
+                <div key={slug} className={styles.section}>
+                    {description}{' '}
+                    <Link
+                        nextLink
+                        openNewWindow={false}
+                        className={styles.link}
+                        href={`/work#${slug}`}
+                    >
+                        See More.
+                    </Link>
+                    <Link
+                        nextLink
+                        openNewWindow={false}
+                        href={`/work#${slug}`}
+                    >
+                        <ResponsiveImage
+                            filename={imageUrl}
+                            imageAlt={imageAlt}
+                            className={styles.image}
+                        />
+                    </Link>
+                </div>
+            )
+        )}
     </div>
 );
 
