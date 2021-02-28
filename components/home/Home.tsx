@@ -48,6 +48,7 @@ const Main: FC = () => {
                         )}
                         onClick={() => setShowMobileIntro(false)}
                         src="/process_chart/process_chart_intro_mobile.gif"
+                        alt="Teaser introduction link to Zaira's thought process diagram"
                     />
                 ) : (
                     <video
