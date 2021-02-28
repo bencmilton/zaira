@@ -30,6 +30,7 @@ const ProjectSwiper: FC = () => {
                     }}
                     preventClicks={false}
                     preventClicksPropagation={false}
+                    resistanceRatio={2}
                     mousewheel
                 >
                     {ALL_PROJECTS.map(project => (
