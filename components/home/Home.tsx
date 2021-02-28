@@ -55,6 +55,10 @@ const Main: FC = () => {
                                 src="/process_chart/process_chart_intro_mobile.webm"
                                 type="video/webm"
                             />
+                            <source
+                                src="/process_chart/process_chart_intro_mobile.mp4"
+                                type="video/mp4"
+                            />
                         </video>
                     </div>
                 ) : (
@@ -67,6 +71,10 @@ const Main: FC = () => {
                         <source
                             src="/process_chart/process_chart_mobile.webm"
                             type="video/webm"
+                        />
+                        <source
+                            src="/process_chart/process_chart_mobile.mp4"
+                            type="video/mp4"
                         />
                         <img
                             src="/process_chart/process_chart_mobile.jpeg"
@@ -85,6 +93,10 @@ const Main: FC = () => {
                     <source
                         src="/process_chart/process_chart.webm"
                         type="video/webm"
+                    />
+                    <source
+                        src="/process_chart/process_chart.mp4"
+                        type="video/mp4"
                     />
                     <img
                         src="/process_chart/process_chart.jpeg"
