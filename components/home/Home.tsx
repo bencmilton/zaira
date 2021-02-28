@@ -101,7 +101,12 @@ const Main: FC = () => {
                 </span>{' '}
                 <span>-- David Lynch</span>
             </div>
-            <div className={styles.substack}>
+            <div
+                className={classNames(
+                    styles.homeLink,
+                    styles.substack
+                )}
+            >
                 <Link
                     underline={false}
                     href="https://perpetualplay.substack.com/"
@@ -109,12 +114,19 @@ const Main: FC = () => {
                     Substack
                 </Link>
             </div>
-            <div className={styles.resume}>
+            <div
+                className={classNames(styles.homeLink, styles.resume)}
+            >
                 <Link underline={false} href={resumeUrl}>
                     Resume
                 </Link>
             </div>
-            <div className={styles.contact}>
+            <div
+                className={classNames(
+                    styles.homeLink,
+                    styles.contact
+                )}
+            >
                 <Link underline={false} href={emailUrl}>
                     Contact Zaira
                 </Link>

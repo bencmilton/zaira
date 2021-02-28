@@ -35,7 +35,9 @@ const ProjectSwiper: FC<Props> = ({ setLogoColor }) => {
                     }}
                     preventClicks={false}
                     preventClicksPropagation={false}
-                    mousewheel
+                    mousewheel={{
+                        sensitivity: 0.5,
+                    }}
                     onSlideChange={swiper => {
                         setLogoColor(
                             ALL_PROJECTS[swiper.activeIndex]
