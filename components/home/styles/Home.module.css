@@ -33,6 +33,22 @@
     max-width: 100%;
 }
 
+.video {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+}
+
+.mobileIntro {
+    cursor: pointer;
+}
+
+.mobileVideo {
+    width: 100%;
+    max-width: 100%;
+    display: none;
+}
+
 .divider {
     grid-column: 1 / span 2;
     grid-row: 5;
@@ -82,11 +98,20 @@
 @media only screen and (max-width: 668px) {
     .header {
         text-align: center;
-        padding: 0 44px;
+        padding: 18px 45px;
         font-size: 16px;
     }
 
     .divider {
         grid-row: 4;
+    }
+
+    .video {
+        display: none;
+    }
+
+    .mobileVideo {
+        display: flex;
+        height: 100%;
     }
 }
