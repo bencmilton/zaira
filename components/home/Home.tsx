@@ -10,27 +10,32 @@ import styles from './styles/Home.module.css';
 const Main: FC = () => (
     <article className={styles.container}>
         <header className={styles.header}>
-            <p>
-                ¡Saludos! I’m{' '}
-                <span className={styles.name}>
-                    Zaira Stefani Vallejo
-                </span>{' '}
-                - a strategist and brand marketer interested in the
-                intersection of culture and commerce. Specifically,
-                how global trends and the human need for
-                self-actualization shape the 5 W’s (and 1 H) of
-                spending behavior and our relationship with companies,
-                small and large.
-            </p>
-            <p>
-                Fact: breaking old habits is hard. In order to be
-                game-changing, you have to get out of your comfort
-                zone. I work with businesses to do just that - push
-                them to color outside of the lines to become enviable,
-                often-copied brands. Why? Because strong brand equity
-                adds real bottomline value - and better brands have
-                more fun!
-            </p>
+            <div>
+                <p>
+                    ¡Saludos! I’m{' '}
+                    <span className={styles.name}>
+                        Zaira Stefani Vallejo
+                    </span>{' '}
+                    - a Strategist and Brand Marketer interested in
+                    the intersection of culture and commerce.
+                    Specifically, how global trends and human emotions
+                    shape spending behavior and the future of our
+                    relationship with companies.
+                </p>
+                <p>
+                    With an integrated approach to Marketing and
+                    Business Strategy, companies can create better
+                    products, build consumer bonds, and tell a
+                    compelling story - all the while driving growth,
+                    unlocking revenue, and cementing their position as
+                    a legacy brand. Experience in ecommerce and
+                    direct-to-consumer has shaped my holistic,{' '}
+                    <i>very</i> hands-on approach to working with
+                    brands: pushing them to have a little fun and
+                    challenge the norm because we're all just here for
+                    a good time.
+                </p>
+            </div>
         </header>
         <div className={styles.imageContainer}>
             <img src="/zaira_workflow_mobile.gif" />

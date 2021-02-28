@@ -34,7 +34,7 @@ const DIFFERENTIATING_A_DTC: ProjectType = {
     imageAlt:
         'A presentation slide describing American consumer shopping behavior with lifestyle images from home company Snowe.',
     description:
-        'Recommendations for a DTC to win market share & transform their business to become a legacy brand.',
+        'Recommendations for a DTC brand to win market share by innovating on their existing business model.',
 };
 
 const LAUNCHING_A_GROCERY: ProjectType = {

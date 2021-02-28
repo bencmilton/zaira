@@ -8,8 +8,11 @@ const TheWoman: FC = () => (
         <div className={styles.innerContainer}>
             <div className={styles.header}>THE WOMAN</div>
             <div className={styles.subHeader}>
-                So, here’s me. And since you asked, Zaira rhymes with
-                Tyra, as in Banks.
+                So, here’s me.{' '}
+                <div>
+                    And since you asked, Zaira rhymes with Tyra,{' '}
+                    <i>as in Banks.</i>
+                </div>
             </div>
         </div>
         <picture>

@@ -15,6 +15,7 @@
     background: var(--zaira-tan);
     color: black;
     font-size: 20px;
+    text-align: left;
 }
 
 .name {
@@ -80,6 +81,7 @@
 
 @media only screen and (max-width: 668px) {
     .header {
+        text-align: center;
         padding: 0 44px;
         font-size: 16px;
     }
