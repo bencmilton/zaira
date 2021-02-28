@@ -16,6 +16,7 @@ export type ProjectType = {
     recommendation?: string | ReactElement;
     status: string;
     description?: string;
+    detailsColors: Color[];
 };
 
 const DIFFERENTIATING_A_DTC: ProjectType = {
@@ -37,6 +38,7 @@ const DIFFERENTIATING_A_DTC: ProjectType = {
         'A presentation slide describing American consumer shopping behavior with lifestyle images from home company Snowe.',
     description:
         'Recommendations for a DTC brand to win market share by innovating on their existing business model.',
+    detailsColors: ['red', 'yellow', 'green'],
 };
 
 const LAUNCHING_A_GROCERY: ProjectType = {
@@ -58,6 +60,7 @@ const LAUNCHING_A_GROCERY: ProjectType = {
         'A mood board for a CPG brand including blue, pink and brown tones, food photography, and a Mexican inspired graphic.',
     description:
         'A pre-launch grocery CPG tapping an emerging demographic during a digital acceleration.',
+    detailsColors: ['yellow', 'blue', 'red'],
 };
 
 const INNOVATING_BRICK_AND_MORTAR: ProjectType = {
@@ -93,6 +96,7 @@ const INNOVATING_BRICK_AND_MORTAR: ProjectType = {
         'A living room decorated with cream, black, and brown tone furniture, framed by windows and natural light.',
     description:
         'Innovating the retail experience to bring a collective of brands into the consumer’s home.',
+    detailsColors: ['blue', 'green', 'red'],
 };
 
 const TARGETING_B2B2C: ProjectType = {
@@ -113,6 +117,7 @@ const TARGETING_B2B2C: ProjectType = {
     imageUrl: '/the_work_4/the_work_4',
     imageAlt:
         'A website landing page sharing information for a B2B account sign up.',
+    detailsColors: ['yellow', 'green', 'blue'],
 };
 
 const BUILDING_OMNICHANNEL_STRATEGY: ProjectType = {
@@ -132,6 +137,7 @@ const BUILDING_OMNICHANNEL_STRATEGY: ProjectType = {
     imageUrl: '/the_work_5/the_work_5',
     imageAlt:
         'An inspirational wedding table and lounge set up in wood and cream tones with a variety of chairs and furniture and a hanging driftwood accent.',
+    detailsColors: ['green', 'blue', 'red'],
 };
 
 // Used in "THE WORK" section on the home page ("/")
