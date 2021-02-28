@@ -17,7 +17,6 @@
 .section {
     padding: 36px 0;
     border-bottom: solid 1px black;
-    /* width: 406px; */
 }
 
 .section:last-child {
@@ -30,7 +29,7 @@
 
 .image {
     display: flex;
-    width: calc((50vw + 36px) / 2);
+    width: 100%;
     padding-top: 27px;
 }
 
@@ -40,10 +39,6 @@
         grid-row: 5;
         overflow: auto;
         height: auto;
-    }
-
-    .section {
-        /* width: 100%; */
     }
 
     .image {
