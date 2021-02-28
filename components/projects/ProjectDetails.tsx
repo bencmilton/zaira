@@ -8,12 +8,14 @@ import styles from './styles/ProjectDetails.module.css';
 
 type Props = {
     project: ProjectType;
+    setLogoColor?: SetLogoColor;
 };
 
-const ProjectDetails: FC<Props> = ({ project }) => {
+const ProjectDetails: FC<Props> = ({ project, setLogoColor }) => {
     const {
         color,
         fontColor,
+        logoColor,
         title,
         subtitle,
         insight,
@@ -23,6 +25,8 @@ const ProjectDetails: FC<Props> = ({ project }) => {
         status,
         slug,
     } = project;
+
+    setLogoColor(logoColor);
 
     return (
         <div

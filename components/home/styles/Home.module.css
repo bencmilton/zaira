@@ -50,13 +50,14 @@
 }
 
 .divider {
+    font-family: 'Kosugi', sans-serif;
     grid-column: 1 / span 2;
     grid-row: 5;
     width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row;
     height: 100px;
     background: var(--zaira-yellow);
 }

@@ -52,6 +52,18 @@ const PageLayout: FC<Props> = ({
                 />
                 <meta name="title" content={pageTitle} />
                 <meta name="description" content={pageDescription} />
+                <link
+                    rel="preconnect"
+                    href="https://fonts.gstatic.com"
+                />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Kosugi&display=swap"
+                    rel="stylesheet"
+                />
+                <link
+                    href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap"
+                    rel="stylesheet"
+                />
             </Head>
             <Nav logoColor={logoColor} />
             <main>
@@ -78,10 +90,7 @@ const PageLayout: FC<Props> = ({
 
                 :global(body) {
                     font-size: calc(10px + 1vmin);
-                    font-family: -apple-system, BlinkMacSystemFont,
-                        'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-                        'Cantarell', 'Fira Sans', 'Droid Sans',
-                        'Helvetica Neue', sans-serif;
+                    font-family: 'Karla', sans-serif;
                     -webkit-font-smoothing: antialiased;
                     -moz-osx-font-smoothing: grayscale;
                     text-align: center;

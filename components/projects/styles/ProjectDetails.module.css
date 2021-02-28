@@ -17,7 +17,8 @@
 }
 
 .title {
-    font-size: 20px;
+    font-family: 'Kosugi', sans-serif;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -28,6 +29,7 @@
 }
 
 .subtitle {
+    font-size: 22px;
     padding: 18px 0;
 }
 

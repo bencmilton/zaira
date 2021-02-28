@@ -5,7 +5,7 @@ export type ProjectType = {
     slug: string;
     color: Color;
     fontColor?: Color;
-    logoColor?: Color;
+    logoColor: Color;
     title: string;
     subtitle: string;
     imageUrl: string;
@@ -121,6 +121,7 @@ const BUILDING_OMNICHANNEL_STRATEGY: ProjectType = {
     subtitle:
         'Developed the marketing strategy for a B2B luxury wedding vendor, with a focus on digital.',
     color: 'black',
+    logoColor: 'red',
     insight:
         'Nüage Designs could become a robust resource for B2B professionals, providing high quality content and leveraging partnerships to increase visibility and establish thought leadership to organically grow the business.',
     action:

@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import classNames from 'classnames';
 
 import Link from '../shared/Link';
 import { emailUrl, resumeUrl } from '../shared/links';
@@ -40,27 +41,14 @@ const Main: FC = () => {
             </header>
             <div className={styles.imageContainer}>
                 {showMobileIntro ? (
-                    <div
-                        className={styles.mobileIntro}
+                    <img
+                        className={classNames(
+                            styles.mobileVideo,
+                            styles.mobileIntro
+                        )}
                         onClick={() => setShowMobileIntro(false)}
-                    >
-                        <video
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            className={styles.mobileVideo}
-                        >
-                            <source
-                                src="/process_chart/process_chart_intro_mobile.webm"
-                                type="video/webm"
-                            />
-                            <source
-                                src="/process_chart/process_chart_intro_mobile.mp4"
-                                type="video/mp4"
-                            />
-                        </video>
-                    </div>
+                        src="/process_chart/process_chart_intro_mobile.gif"
+                    />
                 ) : (
                     <video
                         autoPlay
@@ -108,10 +96,10 @@ const Main: FC = () => {
             <TheWoman />
             <TheWork />
             <div className={styles.divider}>
-                <div>
-                    "Okay, let's try that again, but this time good."
-                </div>
-                <div>- David Lynch</div>
+                <span>
+                    “Okay, let's try that again, but this time good.”
+                </span>{' '}
+                <span>-- David Lynch</span>
             </div>
             <div className={styles.substack}>
                 <Link
