@@ -107,6 +107,7 @@
 
     .divider {
         grid-row: 4;
+        flex-direction: column;
     }
 
     .video {
