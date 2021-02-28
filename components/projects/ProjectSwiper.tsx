@@ -20,6 +20,7 @@ const ProjectSwiper: FC = () => {
         <article className={styles.container}>
             <div className={styles.sliderWrapper}>
                 <Swiper
+                    autoHeight
                     className={styles.swiperContainer}
                     direction="vertical"
                     slidesPerView={1}

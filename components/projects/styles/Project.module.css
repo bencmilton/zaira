@@ -1,7 +1,6 @@
 .container {
     display: flex;
     flex-direction: column;
-    padding: 42px 96px 48px 96px;
     text-align: right;
     color: white;
     height: 100%;
@@ -12,6 +11,8 @@
 }
 
 .header {
+    padding: 42px 96px 48px 96px;
+    width: calc(100% - 192px);
     text-align: right;
     padding-bottom: 9px;
 }

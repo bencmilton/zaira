@@ -2,7 +2,6 @@ import { FC } from 'react';
 import classNames from 'classnames';
 
 import Link from '../shared/Link';
-import ResponsiveImage from '../shared/ResponsiveImage';
 import colors from '../shared/styles/colors.module.css';
 import { ProjectType } from './projectsConfig';
 import styles from './styles/ProjectDetails.module.css';
@@ -17,8 +16,6 @@ const ProjectDetails: FC<Props> = ({ project }) => {
         fontColor,
         title,
         subtitle,
-        imageUrl,
-        imageAlt,
         insight,
         action,
         outcome,
@@ -47,13 +44,6 @@ const ProjectDetails: FC<Props> = ({ project }) => {
                     {title}
                 </div>
                 <div className={styles.subtitle}>{subtitle}</div>
-            </div>
-            <div className={styles.imageContainer}>
-                <ResponsiveImage
-                    filename={imageUrl}
-                    imageAlt={imageAlt}
-                    className={styles.image}
-                />
             </div>
             <div className={styles.infoContainer}>
                 <div className={styles.insights}>
