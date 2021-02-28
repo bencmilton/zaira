@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const FILE = 'the_work_1';
+const FILE = 'the_work_5';
 
 function renameFile(file) {
     const [baseName, cropInfo] = file.split('-');

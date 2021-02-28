@@ -27,8 +27,8 @@ const ResponsiveImage: FC<Props> = ({
                 sizes['685px'] || '100vw'
             }, 685px`}
             srcSet={`
-    ${filename}_ar_1_1,c_fill,g_auto__c_scale,w_480.png 480w,
-    ${filename}_ar_1_1,c_fill,g_auto__c_scale,w_685.png 685w`}
+    ${filename}-ar_1_1,w_480.png 480w,
+    ${filename}-ar_1_1,w_685.png 685w`}
         />
         <source
             media="(min-width: 768px) and (max-width: 991px)"
@@ -36,8 +36,8 @@ const ResponsiveImage: FC<Props> = ({
                 sizes['913px'] || '100vw'
             }, 913px`}
             srcSet={`
-    ${filename}_ar_4_3,c_fill,g_auto__c_scale,w_768.png 768w,
-    ${filename}_ar_4_3,c_fill,g_auto__c_scale,w_913.png 913w`}
+    ${filename}-ar_4_3,w_768.png 768w,
+    ${filename}-ar_4_3,w_913.png 913w`}
         />
         <source
             media="(min-width: 992px) and (max-width: 1199px)"
@@ -45,9 +45,9 @@ const ResponsiveImage: FC<Props> = ({
                 sizes['1218px'] || '100vw'
             }, 1218px`}
             srcSet={`
-    ${filename}_ar_16_9,c_fill,g_auto__c_scale,w_992.png 992w,
-    ${filename}_ar_16_9,c_fill,g_auto__c_scale,w_1185.png 1185w,
-    ${filename}_ar_16_9,c_fill,g_auto__c_scale,w_1218.png 1218w`}
+    ${filename}-ar_16_9,w_992.png 992w,
+    ${filename}-ar_16_9,w_1185.png 1185w,
+    ${filename}-ar_16_9,w_1218.png 1218w`}
         />
         <img
             className={className}
@@ -55,9 +55,9 @@ const ResponsiveImage: FC<Props> = ({
                 sizes['1220px'] || '100vw'
             }, 1220px`}
             srcSet={`
-    ${filename}_c_scale,w_1200.png 1200w,
-    ${filename}_c_scale,w_1220.png 1220w`}
-            src={`${filename}_c_scale,w_1220.png`}
+    ${filename}-c_scale,w_1200.png 1200w,
+    ${filename}-c_scale,w_1220.png 1220w`}
+            src={`${filename}-c_scale,w_1220.png`}
             alt={imageAlt}
         />
     </picture>

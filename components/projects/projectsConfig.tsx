@@ -30,7 +30,7 @@ const DIFFERENTIATING_A_DTC: ProjectType = {
     recommendation:
         'Snowe can win by building community, adopting social commerce, and developing a subscription model, owned and in partnership, that creates a recurring revenue stream to grow brand equity and business bottomline.',
     status: 'Case Study',
-    imageUrl: '/the_work_1/the_work_1-1220w_cqokic',
+    imageUrl: '/the_work_1/the_work_1',
     imageAlt:
         'A presentation slide describing American consumer shopping behavior with lifestyle images from home company Snowe.',
     description:
@@ -50,7 +50,7 @@ const LAUNCHING_A_GROCERY: ProjectType = {
     outcome:
         'Developed an elevated CPG brand targeted to a niche ethnic demographic. Along with a product line of high-quality foods, took a holistic approach to create a brand that consumers can learn and grow with.',
     status: 'Launching Soon',
-    imageUrl: '/the_work_2/the_work_2-1220w_aimsmr',
+    imageUrl: '/the_work_2/the_work_2',
     imageAlt:
         'A mood board for a CPG brand including blue, pink and brown tones, food photography, and a Mexican inspired graphic.',
     description:
@@ -84,7 +84,7 @@ const INNOVATING_BRICK_AND_MORTAR: ProjectType = {
         </span>
     ),
     status: 'Executed',
-    imageUrl: '/the_work_3/the_work_3-1220w_cqakzj',
+    imageUrl: '/the_work_3/the_work_3',
     imageAlt:
         'A living room decorated with cream, black, and brown tone furniture, framed by windows and natural light.',
     description:
@@ -105,7 +105,7 @@ const TARGETING_B2B2C: ProjectType = {
     outcome:
         'Saw a 140% increase in YoY traffic and 2x average time on site. Participated in the Architectural Digest Design Show. Saw a steep increase in new account creation.',
     status: 'Executed',
-    imageUrl: '/the_work_4/the_work_4-1220w_slojj1',
+    imageUrl: '/the_work_4/the_work_4',
     imageAlt:
         'A website landing page sharing information for a B2B account sign up.',
 };
@@ -123,7 +123,7 @@ const BUILDING_OMNICHANNEL_STRATEGY: ProjectType = {
     outcome:
         'Saw customer growth, increased customer LTV, 5x growth in Instagram followers, secured partnerships with key media partners (The Knot), and created a consistent marketing strategy.',
     status: 'Executed',
-    imageUrl: '/the_work_5/the_work_5-1220w_cjrvcs',
+    imageUrl: '/the_work_5/the_work_5',
     imageAlt:
         'An inspirational wedding table and lounge set up in wood and cream tones with a variety of chairs and furniture and a hanging driftwood accent.',
 };
