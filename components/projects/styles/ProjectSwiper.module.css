@@ -4,9 +4,12 @@
 }
 
 .swiperContainer {
+    height: 1400px;
+    max-height: 1400px;
     width: 100%;
     overflow: hidden;
 }
 .swiperSlide {
     width: 100vw;
+    overflow: auto;
 }
