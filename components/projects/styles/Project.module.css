@@ -35,16 +35,12 @@
     height: auto;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .imageContainer {
     text-align: center;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
+    max-width: 100%;
 }
 
 .image {
@@ -65,11 +61,22 @@
 
     .body {
         flex-direction: column;
+        justify-content: initial;
     }
 
     .header {
         padding: 0;
         width: 90%;
+    }
+
+    .imageContainer {
+        max-width: none;
+        width: 100vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
     }
 
     .link {
