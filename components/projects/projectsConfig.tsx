@@ -3,8 +3,9 @@ import Link from '../shared/Link';
 
 export type ProjectType = {
     slug: string;
-    color: string;
-    fontColor?: string;
+    color: Color;
+    fontColor?: Color;
+    logoColor?: Color;
     title: string;
     subtitle: string;
     imageUrl: string;
@@ -23,6 +24,7 @@ const DIFFERENTIATING_A_DTC: ProjectType = {
     subtitle:
         'Using Scott Galloway’s (NYU Stern, Section4) strategy frameworks, developed recommendations for an ecommerce company.',
     color: 'blue',
+    logoColor: 'yellow',
     insight:
         'With Covid-19 accelerating a focus on home and consumer confidence growing online, Snowe can leverage their whole-home offering to establish category dominance.',
     action:
@@ -43,6 +45,7 @@ const LAUNCHING_A_GROCERY: ProjectType = {
     subtitle:
         'Bringing a brand to life from brand foundation to go to market strategy and future growth plan.',
     color: 'green',
+    logoColor: 'blue',
     insight:
         'Consumers have adopted buying food online and DTC, and are keen to discover new products.',
     action:
@@ -63,6 +66,7 @@ const INNOVATING_BRICK_AND_MORTAR: ProjectType = {
     subtitle:
         'An immersive retail experience delivered within a luxury residential high-rise in Manhattan.',
     color: 'yellow',
+    logoColor: 'green',
     fontColor: 'black',
     insight:
         'Partnering with real estate developers to stage units as shoppable showrooms, Snowe could reach consumers as close to home as possible, making it more accessible than ever to see and shop for their apartment.',
@@ -98,6 +102,7 @@ const TARGETING_B2B2C: ProjectType = {
         'Reimagined Snowe’s Trade program to be a competitive and compelling offering for design professionals.',
     color: 'red',
     fontColor: 'black',
+    logoColor: 'white',
     insight:
         'Design professionals were an untapped customer segment who could deliver massive value through higher AOV, network effects, and design-adjacent associations.',
     action:

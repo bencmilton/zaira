@@ -1,3 +1,4 @@
+import { type } from 'os';
 import { FC, useRef } from 'react';
 import SwiperCore, {
     Keyboard,
@@ -13,7 +14,11 @@ import styles from './styles/ProjectSwiper.module.css';
 
 SwiperCore.use([Keyboard, Mousewheel, HashNavigation, A11y]);
 
-const ProjectSwiper: FC = () => {
+type Props = {
+    setLogoColor?: SetLogoColor;
+};
+
+const ProjectSwiper: FC<Props> = ({ setLogoColor }) => {
     const mySwiper = useRef(null);
 
     return (
@@ -31,6 +36,12 @@ const ProjectSwiper: FC = () => {
                     preventClicks={false}
                     preventClicksPropagation={false}
                     mousewheel
+                    onSlideChange={swiper => {
+                        setLogoColor(
+                            ALL_PROJECTS[swiper.activeIndex]
+                                .logoColor || 'red'
+                        );
+                    }}
                 >
                     {ALL_PROJECTS.map(project => (
                         <SwiperSlide

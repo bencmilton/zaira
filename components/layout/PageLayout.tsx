@@ -1,4 +1,10 @@
-import { FC, useEffect } from 'react';
+import {
+    FC,
+    useEffect,
+    useState,
+    cloneElement,
+    isValidElement,
+} from 'react';
 import Head from 'next/head';
 
 import Nav from './Nav';
@@ -16,6 +22,8 @@ const PageLayout: FC<Props> = ({
     showFooter = true,
     children,
 }) => {
+    const [logoColor, setLogoColor] = useState<Color>('red');
+
     useEffect(() => {
         function onPopState() {
             if (typeof window !== undefined && location) {
@@ -45,9 +53,15 @@ const PageLayout: FC<Props> = ({
                 <meta name="title" content={pageTitle} />
                 <meta name="description" content={pageDescription} />
             </Head>
-            <Nav />
+            <Nav logoColor={logoColor} />
             <main>
-                <section>{children}</section>
+                <section>
+                    {isValidElement(children) &&
+                        cloneElement(children, {
+                            logoColor,
+                            setLogoColor,
+                        })}
+                </section>
                 {showFooter && <Footer />}
             </main>
             <style global jsx>{`

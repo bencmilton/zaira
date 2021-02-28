@@ -8,7 +8,11 @@ import colors from '../shared/styles/colors.module.css';
 import { ALL_PROJECTS } from '../projects/projectsConfig';
 import styles from './styles/Nav.module.css';
 
-const Nav: FC = () => {
+type Props = {
+    logoColor: Color;
+};
+
+const Nav: FC<Props> = ({ logoColor }) => {
     const [isOpen, setIsOpen] = useState(false);
 
     useEffect(() => {
@@ -33,9 +37,13 @@ const Nav: FC = () => {
                 <div className={styles.navInnerContainer}>
                     <div
                         onClick={() => setIsOpen(!isOpen)}
-                        className={classNames(styles.navLogo, {
-                            [styles.navLogoIsOpen]: isOpen,
-                        })}
+                        className={classNames(
+                            styles.navLogo,
+                            styles[logoColor],
+                            {
+                                [styles.navLogoIsOpen]: isOpen,
+                            }
+                        )}
                     >
                         <>
                             <div className={navLogoLetterStyle}>
