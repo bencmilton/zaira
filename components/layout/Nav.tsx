@@ -121,21 +121,25 @@ const Nav: FC<Props> = ({ logoColor }) => {
                                 CONTACT
                             </Link>
                         </li>
-                        {ALL_PROJECTS.map(project => (
-                            <li key={`nav-link-${project.title}`}>
-                                <Link
-                                    openNewWindow={false}
-                                    className={classNames(
-                                        styles.link,
-                                        colors[project.color]
-                                    )}
-                                    href={`/work#${project.slug}`}
-                                    onClick={() => setIsOpen(false)}
-                                >
-                                    {project.title}
-                                </Link>
-                            </li>
-                        ))}
+                        {ALL_PROJECTS.map(
+                            ({ title, color, slug }) => (
+                                <li key={`nav-link-${title}`}>
+                                    <Link
+                                        openNewWindow={false}
+                                        className={classNames(
+                                            styles.link,
+                                            colors[color]
+                                        )}
+                                        href={`/work#${slug}`}
+                                        onClick={() =>
+                                            setIsOpen(false)
+                                        }
+                                    >
+                                        {title}
+                                    </Link>
+                                </li>
+                            )
+                        )}
                     </ul>
                 </nav>
             </div>

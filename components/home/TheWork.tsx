@@ -13,7 +13,6 @@ const TheWork: FC = () => (
                 <div key={slug} className={styles.section}>
                     {description}{' '}
                     <Link
-                        nextLink
                         openNewWindow={false}
                         className={styles.link}
                         href={`/work#${slug}`}
@@ -21,7 +20,6 @@ const TheWork: FC = () => (
                         See More.
                     </Link>
                     <Link
-                        nextLink
                         openNewWindow={false}
                         href={`/work#${slug}`}
                     >
