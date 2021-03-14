@@ -11,10 +11,7 @@ const ProjectDetailsPage: FC = () => {
     const project = ALL_PROJECTS.find(proj => proj.slug === slug);
 
     if (!project) {
-        if (typeof window !== 'undefined') {
-            window.open('/');
-        }
-        return null;
+        return <div />;
     }
 
     return (

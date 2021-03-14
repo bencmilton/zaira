@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, useEffect } from 'react';
 import classNames from 'classnames';
 
 import Link from '../shared/Link';
@@ -30,7 +30,9 @@ const ProjectDetails: FC<Props> = ({ project, setLogoColor }) => {
         detailsColors,
     } = project;
 
-    setLogoColor(logoColor);
+    useEffect(() => {
+        setLogoColor(logoColor);
+    }, [logoColor]);
 
     return (
         <div
@@ -57,6 +59,7 @@ const ProjectDetails: FC<Props> = ({ project, setLogoColor }) => {
                     (section, index) =>
                         project[section] && (
                             <div
+                                key={section}
                                 className={classNames(
                                     styles.insights,
                                     colors[
