@@ -4,7 +4,6 @@ import Link from '../shared/Link';
 export type ProjectType = {
     slug: string;
     color: Color;
-    fontColor?: Color;
     logoColor: Color;
     title: string;
     subtitle: string;
@@ -70,7 +69,6 @@ const INNOVATING_BRICK_AND_MORTAR: ProjectType = {
         'An immersive retail experience delivered within a luxury residential high-rise in Manhattan.',
     color: 'yellow',
     logoColor: 'green',
-    fontColor: 'black',
     insight:
         'Partnering with real estate developers to stage units as shoppable showrooms, Snowe could reach consumers as close to home as possible, making it more accessible than ever to see and shop for their apartment.',
     action:
@@ -105,7 +103,6 @@ const TARGETING_B2B2C: ProjectType = {
     subtitle:
         'Reimagined Snowe’s Trade program to be a competitive and compelling offering for design professionals.',
     color: 'red',
-    fontColor: 'black',
     logoColor: 'white',
     insight:
         'Design professionals were an untapped customer segment who could deliver massive value through higher AOV, network effects, and design-adjacent associations.',

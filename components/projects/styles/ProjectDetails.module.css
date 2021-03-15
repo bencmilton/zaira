@@ -4,11 +4,6 @@
     flex-direction: column;
     padding: 42px 96px 48px 96px;
     text-align: left;
-    color: white;
-}
-
-.fontColorBlack {
-    color: black;
 }
 
 .header {
@@ -64,7 +59,6 @@
 .insights {
     display: flex;
     flex-direction: column;
-    color: black;
     width: 354px;
     height: 354px;
     padding: 27px;

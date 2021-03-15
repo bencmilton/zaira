@@ -115,7 +115,10 @@ const Nav: FC<Props> = ({ logoColor }) => {
                         </li>
                         <li>
                             <Link
-                                className={styles.link}
+                                className={classNames(
+                                    styles.link,
+                                    colors.black
+                                )}
                                 href={emailUrl}
                             >
                                 CONTACT

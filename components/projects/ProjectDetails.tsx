@@ -21,7 +21,6 @@ const INFO_SECTIONS = [
 const ProjectDetails: FC<Props> = ({ project, setLogoColor }) => {
     const {
         color,
-        fontColor,
         logoColor,
         title,
         subtitle,
@@ -35,11 +34,7 @@ const ProjectDetails: FC<Props> = ({ project, setLogoColor }) => {
     }, [logoColor]);
 
     return (
-        <div
-            className={classNames(styles.container, colors[color], {
-                [styles.fontColorBlack]: fontColor === 'black',
-            })}
-        >
+        <div className={classNames(styles.container, colors[color])}>
             <div className={styles.header}>
                 <div className={styles.title}>
                     <Link
