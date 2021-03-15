@@ -32,7 +32,8 @@ const Project: FC<Props> = ({
             className={classNames(styles.link, {
                 [styles.fontColorBlack]: fontColor === 'black',
             })}
-            href={`/work/${slug}`}
+            href="/work/[slug]"
+            as={`/work/${slug}`}
         >
             <div className={styles.header}>
                 <div

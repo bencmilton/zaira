@@ -6,6 +6,7 @@ import styles from './styles/Link.module.css';
 
 type Props = {
     href: string;
+    as?: string;
     title?: string;
     className?: string;
     openNewWindow?: boolean;
@@ -16,6 +17,7 @@ type Props = {
 
 const Link: FC<Props> = ({
     href,
+    as,
     title,
     className,
     openNewWindow = true,
@@ -28,9 +30,9 @@ const Link: FC<Props> = ({
         [styles.underline]: underline,
     });
 
-    if (nextLink && href) {
+    if (nextLink && href && as) {
         return (
-            <NextLink href={href}>
+            <NextLink href={href} as={as}>
                 <a
                     title={title}
                     onClick={onClick}
