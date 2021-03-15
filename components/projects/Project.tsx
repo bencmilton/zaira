@@ -27,7 +27,7 @@ const Project: FC<Props> = ({
 }) => (
     <div className={classNames(styles.container, colors[color])}>
         <Link
-            nextLink
+            openNewWindow={false}
             underline={false}
             className={classNames(styles.link, {
                 [styles.fontColorBlack]: fontColor === 'black',
