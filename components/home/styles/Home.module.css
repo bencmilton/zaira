@@ -100,7 +100,8 @@
         text-align: center;
         padding: 18px 45px;
         font-size: 16px;
-        height: 100vh;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
     }
 
     .divider {
