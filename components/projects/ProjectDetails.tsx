@@ -3,12 +3,12 @@ import classNames from 'classnames';
 
 import Link from '../shared/Link';
 import colors from '../shared/styles/colors.module.css';
+import { useLogoColor } from '../layout/PageLayout';
 import { ProjectType } from './projectsConfig';
 import styles from './styles/ProjectDetails.module.css';
 
 type Props = {
     project: ProjectType;
-    setLogoColor?: SetLogoColor;
 };
 
 const INFO_SECTIONS = [
@@ -18,7 +18,8 @@ const INFO_SECTIONS = [
     'recommendation',
 ];
 
-const ProjectDetails: FC<Props> = ({ project, setLogoColor }) => {
+const ProjectDetails: FC<Props> = ({ project }) => {
+    const { setLogoColor } = useLogoColor();
     const {
         color,
         logoColor,

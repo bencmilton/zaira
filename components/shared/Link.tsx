@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import classNames from 'classnames';
 import NextLink from 'next/link';
 
@@ -12,6 +12,7 @@ type Props = {
     underline?: boolean;
     nextLink?: boolean;
     onClick?: () => void;
+    children: ReactNode;
 };
 
 const Link: FC<Props> = ({
@@ -30,8 +31,8 @@ const Link: FC<Props> = ({
 
     if (nextLink && href) {
         return (
-            <NextLink href={href}>
-                <a className={linkClasses}>{children}</a>
+            <NextLink href={href} className={linkClasses}>
+                {children}
             </NextLink>
         );
     }

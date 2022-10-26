@@ -2,8 +2,9 @@ import {
     FC,
     useEffect,
     useState,
-    cloneElement,
-    isValidElement,
+    useContext,
+    ReactNode,
+    createContext,
 } from 'react';
 import Head from 'next/head';
 
@@ -14,7 +15,22 @@ type Props = {
     pageTitle: string;
     pageDescription: string;
     showFooter?: boolean;
+    children: ReactNode;
 };
+
+type LogoColorContextType = {
+    logoColor: Color;
+    setLogoColor(color: Color): void;
+};
+
+const LogoColorContext = createContext({
+    logoColor: 'red' as Color,
+    setLogoColor: (color: Color) => {},
+});
+
+export function useLogoColor() {
+    return useContext<LogoColorContextType>(LogoColorContext);
+}
 
 const PageLayout: FC<Props> = ({
     pageTitle,
@@ -68,11 +84,11 @@ const PageLayout: FC<Props> = ({
             <Nav logoColor={logoColor} />
             <main>
                 <section>
-                    {isValidElement(children) &&
-                        cloneElement(children, {
-                            logoColor,
-                            setLogoColor,
-                        })}
+                    <LogoColorContext.Provider
+                        value={{ logoColor, setLogoColor }}
+                    >
+                        {children}
+                    </LogoColorContext.Provider>
                 </section>
                 {showFooter && <Footer />}
             </main>
@@ -89,6 +105,7 @@ const PageLayout: FC<Props> = ({
                 }
 
                 :global(body) {
+                    margin: 0;
                     font-size: calc(10px + 1vmin);
                     font-family: 'Karla', sans-serif;
                     -webkit-font-smoothing: antialiased;
