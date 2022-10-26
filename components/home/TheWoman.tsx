@@ -37,9 +37,9 @@ const TheWoman: FC = () => (
                 <li className={styles.listItem}>
                     <Link
                         className={styles.link}
-                        href="https://www.americaneedsyou.org/locations/nyny/ny-young-leadership-board/"
+                        href="https://www.google.com/search?q=bu%C3%B1uelos+colombianos&source=lnms&tbm=isch"
                     >
-                        The power of mentorship
+                        Buñuelos
                     </Link>
                 </li>
                 <li className={styles.listItem}>
@@ -55,7 +55,7 @@ const TheWoman: FC = () => (
                         className={styles.link}
                         href="https://www.nypl.org/"
                     >
-                        Continued learning
+                        Infinite stacks of books
                     </Link>
                 </li>
                 <li className={styles.listItem}>

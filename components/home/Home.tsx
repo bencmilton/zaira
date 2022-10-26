@@ -97,10 +97,15 @@ const Main: FC = () => {
             <TheWoman />
             <TheWork />
             <div className={styles.divider}>
-                <span>
-                    “Okay, let's try that again, but this time good.”
-                </span>{' '}
-                <span>-- David Lynch</span>
+                <p className={styles.quote}>
+                    <span>
+                        A form gives me an idea, this idea evokes
+                        another form, and everything culminates in the
+                        figures, animals, and things I had no way of
+                        foreseeing in advance.
+                    </span>
+                    <span>-- Joan Miró</span>
+                </p>
             </div>
             <div
                 className={classNames(

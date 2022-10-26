@@ -7,7 +7,7 @@ const Footer: FC = () => (
     <footer className={styles.footer}>
         <div className={styles.footerSection}>
             <div className={styles.copyright}>
-                © Zaira Stefani Vallejo 2021
+                © Zaira Stefani Vallejo 2022
             </div>
         </div>
         <div className={styles.footerSection}>
