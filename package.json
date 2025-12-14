@@ -8,6 +8,7 @@
         "tsc": "tsc"
     },
     "dependencies": {
+        "@vercel/analytics": "^1.6.1",
         "classnames": "^2.3.2",
         "next": "^16.0.10",
         "react": "^19.2.3",
