@@ -1,18 +1,11 @@
 import { FC, useRef } from 'react';
-import SwiperCore, {
-    Keyboard,
-    Mousewheel,
-    A11y,
-    HashNavigation,
-} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Keyboard, Mousewheel, A11y, HashNavigation } from 'swiper/modules';
 
 import { useLogoColor } from '../layout/PageLayout';
 import Project from './Project';
 import { ALL_PROJECTS } from './projectsConfig';
 import styles from './styles/ProjectSwiper.module.css';
-
-SwiperCore.use([Keyboard, Mousewheel, HashNavigation, A11y]);
 
 const ProjectSwiper: FC = () => {
     const { setLogoColor } = useLogoColor();
@@ -22,6 +15,7 @@ const ProjectSwiper: FC = () => {
         <article className={styles.container}>
             <div className={styles.sliderWrapper}>
                 <Swiper
+                    modules={[Keyboard, Mousewheel, HashNavigation, A11y]}
                     className={styles.swiperContainer}
                     direction="vertical"
                     slidesPerView={1}
